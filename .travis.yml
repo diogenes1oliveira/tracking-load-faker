@@ -2,6 +2,14 @@ language: python
 python: "3.7"
 dist: xenial
 
+env:
+  - >
+    LOCUST_MIN_WAIT=30
+    LOCUST_MAX_WAIT=90
+    MATOMO_SITE_ID=1
+    MATOMO_SITE_BASE_URL=http://example.com/
+    MATOMO_TRACKER_SUBPATH=matomo.php
+
 cache:
   pip: true
 
@@ -16,3 +24,16 @@ script:
 
 after_success:
   - codecov
+
+before_deploy:
+  - mkdir -p ./build/
+  - git archive HEAD -o ./build/${TRAVIS_TAG}.tar.gz --prefix=tracking-load-faker
+
+deploy:
+  api_key: "${GITHUB_TOKEN}"
+  provider: releases
+  file_glob: true
+  file: ./build/*.tar.gz
+  skip_cleanup: true
+  on:
+    tags: true
