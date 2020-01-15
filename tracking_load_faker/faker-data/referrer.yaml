@@ -1,0 +1,14 @@
+# This list is to be mixed with
+#  - some referers from page-urls
+#  - some empty values
+#  - some search engines with a generated keyword (search-engine-urls-with-keyword)
+#  - some search engines without a keyword (search-engine-urls-without-keyword)
+# See an example in https://github.com/matomo-org/plugin-VisitorGenerator/blob/master/Faker/Request.php
+- https://fb.me/
+- https://twitter.com/
+- https://github.com/
+- http://www.facebook.com/l.php?u=http%3A%2F%2Fpiwik.org%2F
+- http://www.example.com/5-great-google-analytics-alternatives/?utm_content=ourfake&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+- http://www.example.org/blog/15-google-analytics-alternatives?utm_source=twitter&utm_medium=social&utm_campaign=blog
+- http://t.co/itFSLvPlqW
+- http://t.co/g0Alwc83T6
