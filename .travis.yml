@@ -27,7 +27,11 @@ after_success:
 
 before_deploy:
   - mkdir -p ./build/
-  - git archive HEAD -o ./build/${TRAVIS_TAG}.tar.gz --prefix=tracking-load-faker
+  - export ARTIFACT_VERSION="`echo $TRAVIS_TAG | sed 's/^v//'`"
+  - >
+    git archive HEAD
+    -o ./build/tracking-load-faker-${ARTIFACT_VERSION}.tar.gz
+    --prefix=tracking-load-faker/
 
 deploy:
   api_key: "${GITHUB_TOKEN}"
