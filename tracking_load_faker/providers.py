@@ -40,8 +40,9 @@ def get_all_providers() -> Iterable[TrackingBaseProvider]:
     '''
     Returns a list with all the providers derived from TrackingBaseProvider.
 
-    If you're not using `TrackingFaker`, you should use this function to manually
-    add all providers to your Faker instance, because some are inter-dependent:
+    If you're not using `TrackingFaker`, you should use this function to
+    manually add all providers to your Faker instance, because some are
+    inter-dependent:
 
     >>> for p in get_all_providers():
     ...     fake.add_provider(p)
