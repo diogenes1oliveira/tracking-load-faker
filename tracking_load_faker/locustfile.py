@@ -35,8 +35,8 @@ class TrackingRequest(HttpLocust):
     assert host, 'MATOMO_REMOTE_HOST is empty'
 
     wait_time = between(
-        float(os.getenv('LOCUST_MIN_WAIT', '30')) / 100.0,
-        float(os.getenv('LOCUST_MAX_WAIT', '90')) / 100.0,
+        float(os.getenv('LOCUST_MIN_WAIT', '30')) / 1000.0,
+        float(os.getenv('LOCUST_MAX_WAIT', '90')) / 1000.0,
     )
 
     id_site = int(os.getenv('MATOMO_SITE_ID', '1'))
