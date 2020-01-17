@@ -6,7 +6,7 @@ Faker providers for tracking request generation
 '''
 
 from collections import OrderedDict
-from typing import Iterable, Tuple
+from typing import Any, Iterable, Mapping, Tuple
 from urllib.parse import urljoin, quote as urlquote
 
 from faker import Faker
@@ -209,7 +209,7 @@ class RegionProvider(TrackingBaseProvider):
     '''
     data = get_faker_data('region')
 
-    def region(self):
+    def region(self) -> str:
         return self.random_element(self.data)
 
 
@@ -223,7 +223,7 @@ class BiasedBoolProvider(TrackingBaseProvider):
     False
     '''
 
-    def biased_bool(self, bias=0.5):
+    def biased_bool(self, bias: float = 0.5) -> bool:
         return self.random_element(OrderedDict([
             (True, bias),
             (False, 1.0 - bias),
@@ -239,7 +239,7 @@ class TrackingRequestProvider(TrackingBaseProvider):
         self,
         base_url: str = 'http://example.com/',
         id_site: int = 1,
-    ):
+    ) -> Mapping[str, Any]:
         return {
             'action_name': self.generator.sentence(),
             'idsite': str(id_site),
