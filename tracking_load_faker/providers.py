@@ -12,7 +12,7 @@ from urllib.parse import urljoin, quote as urlquote
 from faker import Faker
 from faker.providers import BaseProvider
 
-from ._utils import get_faker_data, get_subclasses
+from tracking_load_faker.utils import get_faker_data, get_subclasses
 
 
 class TrackingBaseProvider(BaseProvider):

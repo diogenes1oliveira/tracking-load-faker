@@ -1,4 +1,4 @@
-from tracking_load_faker._utils import faker_data, get_faker_data
+from tracking_load_faker.utils import faker_data, get_faker_data
 
 
 def test_faker_data():

@@ -33,4 +33,6 @@ def test_providers():
         fake.seed_instance(42)
         generated2 = getattr(fake, basename)()
 
+        assert generated1 is not None
+        assert generated2 is not None
         assert generated1 == generated2

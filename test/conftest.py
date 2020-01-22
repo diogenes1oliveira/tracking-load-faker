@@ -6,7 +6,7 @@ import time
 from pytest import fixture
 from pytest_cov.embed import cleanup_on_sigterm
 
-from tracking_load_faker._utils import run_simple_ping_server
+from tracking_load_faker.utils import run_simple_ping_server
 
 cleanup_on_sigterm()
 
