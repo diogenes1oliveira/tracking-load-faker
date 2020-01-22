@@ -1,6 +1,8 @@
 '''
 Utility functions to deal with Faker data
 '''
+
+from contextlib import wraps
 from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 import os
 
@@ -24,6 +26,28 @@ def get_faker_data(basename: str, search_path: str = None):
     file_path = os.path.join(search_path, basename + '.yaml')
     with open(file_path) as fp:
         return yaml.load(fp, Loader=yaml.SafeLoader)
+
+
+def faker_data(basename, search_path: str = None, arg_name: str = 'data'):
+    f'''
+    Decorator to inject the Faker data as an argument to the function.
+
+    Args:
+        basename: name of the file without the '.yaml' extension
+        search_path: where to look up the file. Defaults to the value of the
+            environment variable FAKER_DATA_DIR or the package directory
+            in {FAKER_DATA_DIR}
+        arg_name: name of the argument to be injected. Defaults to 'data'
+    '''
+
+    def decorator(f):
+        @wraps(f)
+        def inner(*args, **kwargs):
+            kwargs = kwargs or {}
+            kwargs[arg_name] = get_faker_data(basename, search_path)
+            return f(*args, **kwargs)
+        return inner
+    return decorator
 
 
 def get_subclasses(cls: type):
