@@ -298,6 +298,9 @@ class Provider(TrackingBaseProvider):
             'lang': self.generator.accept_language(),
             'res': 'x'.join(self.generator.resolution()),
             'uid': user_id,
+            'idsite': str(id_site),
+            'rec': '1',
+            'apiv': '1',
         }
 
         action = self.generator.page_action(
