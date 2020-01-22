@@ -3,7 +3,6 @@ Utility functions to deal with Faker data
 '''
 
 from contextlib import wraps
-from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 import os
 from typing import Iterable
 
@@ -58,18 +57,3 @@ def get_subclasses(cls: type) -> Iterable[type]:
     for subclass in cls.__subclasses__():
         yield from get_subclasses(subclass)
         yield subclass
-
-
-def run_simple_ping_server(port=9999):
-    class RequestHandler(BaseHTTPRequestHandler):
-        def do_GET(self):
-            self.send_response(200)
-            self.send_header('Content-type', 'text/plain')
-            self.end_headers()
-            self.wfile.write(self.path.encode('utf-8'))
-
-        def log_request(self, *args, **kwargs):
-            pass
-
-    server = ThreadingHTTPServer(('', port), RequestHandler)
-    server.serve_forever()

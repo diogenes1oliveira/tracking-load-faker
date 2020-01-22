@@ -1,14 +1,29 @@
 import requests
 from contextlib import contextmanager
+from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 import multiprocessing
 import time
 
 from pytest import fixture
 from pytest_cov.embed import cleanup_on_sigterm
 
-from tracking_load_faker.utils import run_simple_ping_server
 
 cleanup_on_sigterm()
+
+
+def run_simple_ping_server(port=9999):
+    class RequestHandler(BaseHTTPRequestHandler):
+        def do_GET(self):
+            self.send_response(200)
+            self.send_header('Content-type', 'text/plain')
+            self.end_headers()
+            self.wfile.write(self.path.encode('utf-8'))
+
+        def log_request(self, *args, **kwargs):
+            pass
+
+    server = ThreadingHTTPServer(('', port), RequestHandler)
+    server.serve_forever()
 
 
 @fixture(scope='session')
