@@ -1,13 +1,12 @@
 import os
-from urllib3.exceptions import InsecureRequestWarning
 
 from locust import between, HttpLocust, TaskSet, task
-import requests
+from requests.packages import urllib3
 
 from tracking_load_faker.providers import TrackingFaker
 
 
-requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
+urllib3.disable_warnings(category=urllib3.exceptions.InsecureRequestWarning)
 
 
 class TrackingRequestBehavior(TaskSet):
