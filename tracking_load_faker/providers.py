@@ -12,7 +12,9 @@ from urllib.parse import urljoin, quote as urlquote
 from faker import Faker
 from faker.providers import BaseProvider
 
-from tracking_load_faker.utils import get_faker_data, get_subclasses
+from tracking_load_faker.utils import (
+    faker_data, get_faker_data, get_subclasses
+)
 
 
 class TrackingBaseProvider(BaseProvider):
@@ -59,10 +61,9 @@ class PageUrlProvider(TrackingBaseProvider):
     >>> fake.page_url()
     '/docs/update'
     '''
-    data = get_faker_data('page_url')
-
-    def page_url(self) -> str:
-        return self.random_element(self.data)
+    @faker_data('page_url')
+    def page_url(self, data: Iterable[str] = None) -> str:
+        return self.random_element(data)
 
 
 class ProductNameProvider(TrackingBaseProvider):
@@ -74,10 +75,9 @@ class ProductNameProvider(TrackingBaseProvider):
     >>> fake.product_name()
     'My Awesome Product'
     '''
-    data = get_faker_data('product_name')
-
-    def product_name(self) -> str:
-        return self.random_element(self.data)
+    @faker_data('product_name')
+    def product_name(self, data: Iterable[str] = None) -> str:
+        return self.random_element(data)
 
 
 class ResolutionProvider(TrackingBaseProvider):
@@ -89,10 +89,9 @@ class ResolutionProvider(TrackingBaseProvider):
     >>> fake.resolution()
     ('800', '600')
     '''
-    data = get_faker_data('resolution')
-
-    def resolution(self) -> Tuple[str, str]:
-        return self.random_element(self.data)
+    @faker_data('resolution')
+    def resolution(self, data: Iterable[str] = None) -> Tuple[str, str]:
+        return self.random_element(data)
 
 
 class GenderProvider(TrackingBaseProvider):
@@ -104,10 +103,9 @@ class GenderProvider(TrackingBaseProvider):
     >>> fake.gender()
     ''
     '''
-    data = get_faker_data('gender')
-
-    def gender(self) -> str:
-        return self.random_element(self.data)
+    @faker_data('gender')
+    def gender(self, data: Iterable[str] = None) -> str:
+        return self.random_element(data)
 
 
 class AcceptLanguageProvider(TrackingBaseProvider):
@@ -119,10 +117,9 @@ class AcceptLanguageProvider(TrackingBaseProvider):
     >>> fake.accept_language()
     ''
     '''
-    data = get_faker_data('accept_language')
-
-    def accept_language(self) -> str:
-        return self.random_element(self.data)
+    @faker_data('accept_language')
+    def accept_language(self, data: Iterable[str] = None) -> str:
+        return self.random_element(data)
 
 
 class SearchEngineProvider(TrackingBaseProvider):
@@ -134,10 +131,9 @@ class SearchEngineProvider(TrackingBaseProvider):
     >>> fake.search_engine()
     ''
     '''
-    data = get_faker_data('search_engine')
-
-    def search_engine(self) -> str:
-        return self.random_element(self.data)
+    @faker_data('search_engine')
+    def search_engine(self, data: Iterable[str] = None) -> str:
+        return self.random_element(data)
 
 
 class SearchEngineUrlWithoutKeywordProvider(TrackingBaseProvider):
@@ -149,10 +145,12 @@ class SearchEngineUrlWithoutKeywordProvider(TrackingBaseProvider):
     >>> fake.search_engine_url_without_keyword()
     'https://duckduckgo.com/'
     '''
-    data = get_faker_data('search_engine_url_without_keyword')
-
-    def search_engine_url_without_keyword(self) -> str:
-        return self.random_element(self.data)
+    @faker_data('search_engine_url_without_keyword')
+    def search_engine_url_without_keyword(
+        self,
+        data: Iterable[str] = None,
+    ) -> str:
+        return self.random_element(data)
 
 
 class SearchEngineUrlWithKeywordProvider(TrackingBaseProvider):
@@ -164,10 +162,13 @@ class SearchEngineUrlWithKeywordProvider(TrackingBaseProvider):
     >>> fake.search_engine_url_with_keyword('not a dollar to my name')
     'http://search.yahoo.com/search;?p=not%20a%20dollar%20to%20my%20name'
     '''
-    data = get_faker_data('search_engine_url_with_keyword')
-
-    def search_engine_url_with_keyword(self, keyword: str = 'python') -> str:
-        base = self.random_element(self.data)
+    @faker_data('search_engine_url_with_keyword')
+    def search_engine_url_with_keyword(
+        self,
+        keyword: str = 'python',
+        data: Iterable[str] = None,
+    ) -> str:
+        base = self.random_element(data)
         return base + urlquote(keyword)
 
 
@@ -180,9 +181,8 @@ class ReferrerProvider(TrackingBaseProvider):
     >>> fake.referrer()
     'http://www.bing.com/search?q=cool%20package'
     '''
-    data = get_faker_data('referrer')
-
-    def referrer(self) -> str:
+    @faker_data('referrer')
+    def referrer(self, data: Iterable[str] = None) -> str:
         url_referrer = self.generator.url()
         word = self.generator.word()
         url_keyword = self.generator.search_engine_url_with_keyword(word)
@@ -194,7 +194,7 @@ class ReferrerProvider(TrackingBaseProvider):
             [url_referrer] * 9 +
             [url_no_keyword] * 4 +
             [url_keyword] * 9 +
-            self.data
+            data
         )
 
 
@@ -207,10 +207,9 @@ class RegionProvider(TrackingBaseProvider):
     >>> fake.region()
     'QC'
     '''
-    data = get_faker_data('region')
-
-    def region(self) -> str:
-        return self.random_element(self.data)
+    @faker_data('region')
+    def region(self, data: Iterable[str] = None) -> str:
+        return self.random_element(data)
 
 
 class BiasedBoolProvider(TrackingBaseProvider):
