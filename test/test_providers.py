@@ -2,8 +2,6 @@
 from pathlib import Path
 import re
 
-import inflection
-
 from tracking_load_faker import providers
 
 # Assuming the structure:
@@ -22,11 +20,22 @@ def test_providers():
     all_providers = list(providers.get_all_providers())
     assert len(all_providers)
 
-    for provider in all_providers:
-        basename = inflection.underscore(
-            re.sub('Provider$', '', provider.__name__),
-        )
+    basenames = (
+        'page_url',
+        'product_name',
+        'resolution',
+        'gender',
+        'accept_language',
+        'search_engine',
+        'search_engine_url_without_keyword',
+        'search_engine_url_with_keyword',
+        'referrer',
+        'region',
+        'biased_bool',
+        'tracking_request',
+    )
 
+    for basename in basenames:
         fake.seed_instance(42)
         generated1 = getattr(fake, basename)()
 
