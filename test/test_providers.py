@@ -1,6 +1,5 @@
 
 from pathlib import Path
-import re
 
 from tracking_load_faker import providers
 
