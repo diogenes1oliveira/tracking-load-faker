@@ -6,7 +6,7 @@ Faker providers for tracking request generation
 '''
 
 from collections import OrderedDict
-from typing import Any, List, Mapping, Tuple
+from typing import Any, Iterable, List, Mapping, Tuple
 from urllib.parse import urljoin, quote as urlquote
 
 from faker import Faker
@@ -36,7 +36,7 @@ class TrackingFaker(Faker):
             self.add_provider(p)
 
 
-def get_all_providers() -> List[TrackingBaseProvider]:
+def get_all_providers() -> Iterable[TrackingBaseProvider]:
     '''
     Returns a list with all the providers derived from TrackingBaseProvider.
 

@@ -5,6 +5,7 @@ Utility functions to deal with Faker data
 from contextlib import wraps
 from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 import os
+from typing import Iterable
 
 import yaml
 
@@ -50,7 +51,10 @@ def faker_data(basename, search_path: str = None, arg_name: str = 'data'):
     return decorator
 
 
-def get_subclasses(cls: type):
+def get_subclasses(cls: type) -> Iterable[type]:
+    '''
+    Iterates through the subclasses of the given class
+    '''
     for subclass in cls.__subclasses__():
         yield from get_subclasses(subclass)
         yield subclass
