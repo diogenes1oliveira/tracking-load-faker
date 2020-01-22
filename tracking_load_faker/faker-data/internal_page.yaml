@@ -1,0 +1,1200 @@
+- path: /
+  title: ROOT
+- path: /faq
+  title: Faq
+- path: /faq/mobile
+  title: Mobile / Faq
+- path: /contact
+  title: Contact
+- path: /contact/email
+  title: Email / Contact
+- path: /contact/website
+  title: Website / Contact
+- path: /info
+  title: Info
+- path: /features/list/?pk_campaign=Email-Nov2011&pk_kwd=LearnMore
+  title: List / Features
+- path: /download-started/
+  title: Download-Started
+- path: /faq/how-to/
+  title: How-To / Faq
+- path: /faq/troubleshooting/
+  title: Troubleshooting / Faq
+- path: /docs/update/
+  title: Update / Docs
+- path: /docs/piwik-tour/
+  title: Piwik-Tour / Docs
+- path: /docs/analytics-api/tutorials-examples/
+  title: Tutorials-Examples / Analytics-Api / Docs
+- path: /faq/new-to-piwik/
+  title: New-To-Piwik / Faq
+- path: /docs/
+  title: Docs
+- path: /docs/custom-variables/
+  title: Custom-Variables / Docs
+- path: "/piwik\u65E5\u672C\u30E6\u30FC\u30B6\u30FC\u4F1A\u306B\u3064\u3044\u3066"
+  title: "Piwik\u65E5\u672C\u30E6\u30FC\u30B6\u30FC\u4F1A\u306B\u3064\u3044\u3066"
+- path: "/\u30D5\u30A9\u30FC\u30E0"
+  title: "\u30D5\u30A9\u30FC\u30E0"
+- path: "/\u6280\u8853\u6587\u66F8"
+  title: "\u6280\u8853\u6587\u66F8"
+- path: "/\u6280\u8853\u6587\u66F8"
+  title: "\u6280\u8853\u6587\u66F8"
+- path: "/\u6280\u8853\u6587\u66F8"
+  title: "\u6280\u8853\u6587\u66F8"
+- path: "/\u6280\u8853\u6587\u66F8"
+  title: "\u6280\u8853\u6587\u66F8"
+- path: "/\u6280\u8853\u6587\u66F8"
+  title: "\u6280\u8853\u6587\u66F8"
+- path: "/\u6280\u8853\u6587\u66F8"
+  title: "\u6280\u8853\u6587\u66F8"
+- path: "/piwik\u3068\u306F"
+  title: "Piwik\u3068\u306F"
+- path: "/piwik\u3068\u306F"
+  title: "Piwik\u3068\u306F"
+- path: "/piwik\u3068\u306F"
+  title: "Piwik\u3068\u306F"
+- path: "/piwik\u3068\u306F"
+  title: "Piwik\u3068\u306F"
+- path: "/piwik\u3068\u306F"
+  title: "Piwik\u3068\u306F"
+- path: "/piwik\u3068\u306F"
+  title: "Piwik\u3068\u306F"
+- path: "/piwik\u3068\u306F"
+  title: "Piwik\u3068\u306F"
+- path: "/piwik\u3068\u306F"
+  title: "Piwik\u3068\u306F"
+- path: "/piwik\u3068\u306F"
+  title: "Piwik\u3068\u306F"
+- path: "/\u6A5F\u80FD\u8AAC\u660E/4682"
+  title: "4682 / \u6A5F\u80FD\u8AAC\u660E"
+- path: "/\u6A5F\u80FD\u8AAC\u660E/3985#01"
+  title: "3985#01 / \u6A5F\u80FD\u8AAC\u660E"
+- path: "/\u6A5F\u80FD\u8AAC\u660E/4800"
+  title: "4800 / \u6A5F\u80FD\u8AAC\u660E"
+- path: "/\u6A5F\u80FD\u8AAC\u660E/4800"
+  title: "4800 / \u6A5F\u80FD\u8AAC\u660E"
+- path: "/\u6A5F\u80FD\u8AAC\u660E/4800"
+  title: "4800 / \u6A5F\u80FD\u8AAC\u660E"
+- path: "/\u6A5F\u80FD\u8AAC\u660E/4800"
+  title: "4800 / \u6A5F\u80FD\u8AAC\u660E"
+- path: "/\u6A5F\u80FD\u8AAC\u660E/3985#02"
+  title: "3985#02 / \u6A5F\u80FD\u8AAC\u660E"
+- path: "/\u6A5F\u80FD\u8AAC\u660E/3985#03"
+  title: "3985#03 / \u6A5F\u80FD\u8AAC\u660E"
+- path: "/\u6A5F\u80FD\u8AAC\u660E/3986"
+  title: "3986 / \u6A5F\u80FD\u8AAC\u660E"
+- path: "/\u6A5F\u80FD\u8AAC\u660E"
+  title: "\u6A5F\u80FD\u8AAC\u660E"
+- path: "/\u6A5F\u80FD\u8AAC\u660E/2014/02/test"
+  title: "Test / 02 / 2014 / \u6A5F\u80FD\u8AAC\u660E"
+- path: "/\u6A5F\u80FD\u8AAC\u660E/2014/02/test2"
+  title: "Test2 / 02 / 2014 / \u6A5F\u80FD\u8AAC\u660E"
+- path: "/\u6A5F\u80FD\u8AAC\u660E/2014/02/4"
+  title: "4 / 02 / 2014 / \u6A5F\u80FD\u8AAC\u660E"
+- path: /faq/general/
+  title: General / Faq
+- path: /docs/plugins/
+  title: Plugins / Docs
+- path: /participate/development-process/
+  title: Development-Process / Participate
+- path: /docs/tracking-api/
+  title: Tracking-Api / Docs
+- path: /participate/
+  title: Participate
+- path: /blog/2012/06/piwik-ecommerce-extension-for-magento/
+  title: Piwik-Ecommerce-Extension-For-Magento / Blog
+- path: /docs/geo-locate/
+  title: Geo-Locate / Docs
+- path: /download-piwik/
+  title: Download-Piwik
+- path: /faq/how-to-install/
+  title: How-To-Install / Faq
+- path: /about/
+  title: About
+- path: /docs/installation/
+  title: Installation / Docs
+- path: /blog/2012/04/how-to-use-piwik-to-track-mobile-apps-activity-clicks-phones-errors-etc/
+  title: How-To-Use-Piwik-To-Track-Mobile-Apps-Activity-Clicks-Phones-Errors-Etc / Blog
+- path: /features/
+  title: Features
+- path: /user-guide/
+  title: User-Guide
+- path: /docs/javascript-tracking/
+  title: Javascript-Tracking / Docs
+- path: /docs/plugins/database-schema/
+  title: Database-Schema / Plugins / Docs
+- path: /log-analytics/
+  title: Log-Analytics
+- path: /docs/tracking-campaigns/
+  title: Tracking-Campaigns / Docs
+- path: /docs/data-limits/
+  title: Data-Limits / Docs
+- path: /blog/2011/02/exporting-google-analytics-to-piwik-google2piwik/
+  title: Exporting-Google-Analytics-To-Piwik-Google2Piwik / Blog
+- path: /docs/ecommerce-analytics/
+  title: Ecommerce-Analytics / Docs
+- path: /roadmap/
+  title: Roadmap
+- path: /the-piwik-team/
+  title: The-Piwik-Team
+- path: /faq/
+  title: Faq
+- path: /docs/analytics-api/metadata/
+  title: Metadata / Analytics-Api / Docs
+- path: /docs/tracking-goals-web-analytics/
+  title: Tracking-Goals-Web-Analytics / Docs
+- path: /docs/analytics-api/segmentation/
+  title: Segmentation / Analytics-Api / Docs
+- path: /mobile/
+  title: Mobile
+- path: /contribute/
+  title: Contribute
+- path: /docs/analytics-api/reference/
+  title: Reference / Analytics-Api / Docs
+- path: /blog/
+  title: Blog
+- path: /thank-you-all/
+  title: Thank-You-All
+- path: /blog/2013/02/clearcode-development-company-doing-business-with-piwik/
+  title: Clearcode-Development-Company-Doing-Business-With-Piwik / Blog
+- path: /docs/analytics-api/
+  title: Analytics-Api / Docs
+- path: /docs/segmentation/
+  title: Segmentation / Docs
+- path: /hosting/
+  title: Hosting
+- path: /docs/tracking-campaigns/url-builder/
+  title: Url-Builder / Tracking-Campaigns / Docs
+- path: /docs/site-search/
+  title: Site-Search / Docs
+- path: /about/sponsors/
+  title: Sponsors / About
+- path: /docs/manage-users/
+  title: Manage-Users / Docs
+- path: /docs/requirements/
+  title: Requirements / Docs
+- path: /log-analytics/how-to/
+  title: How-To / Log-Analytics
+- path: /intranet-analytics/
+  title: Intranet-Analytics
+- path: /faq/openx/
+  title: Openx / Faq
+- path: /participate/coding-standards/
+  title: Coding-Standards / Participate
+- path: /docs/plugins/security-checklist/
+  title: Security-Checklist / Plugins / Docs
+- path: /mobile/faq/
+  title: Faq / Mobile
+- path: /changelog/
+  title: Changelog
+- path: /blog/2008/11/piwik-plugin-for-drupal/
+  title: Piwik-Plugin-For-Drupal / Blog
+- path: /privacy/
+  title: Privacy
+- path: /docs/page-overlay/
+  title: Page-Overlay / Docs
+- path: /blog/2009/01/using-the-piwik-api-and-google-spreadsheet-to-generate-excel-like-custom-reports/
+  title: Using-The-Piwik-Api-And-Google-Spreadsheet-To-Generate-Excel-Like-Custom-Reports / Blog
+- path: /docs/installation-optimization/
+  title: Installation-Optimization / Docs
+- path: /integrate/
+  title: Integrate
+- path: /docs/integration/
+  title: Integration / Docs
+- path: /faq/phpmyvisites/
+  title: Phpmyvisites / Faq
+- path: /docs/real-time/
+  title: Real-Time / Docs
+- path: /blog/category/videos/
+  title: Videos / Category / Blog
+- path: /blog/2012/12/learn-all-about-piwiks-analytics-features-9-minutes-video-tutorial/
+  title: Learn-All-About-Piwiks-Analytics-Features-9-Minutes-Video-Tutorial / Blog
+- path: /blog/2013/02/piwik-is-on-github/
+  title: Piwik-Is-On-Github / Blog
+- path: /blog/2013/04/piwik-speaks-your-language/
+  title: Piwik-Speaks-Your-Language / Blog
+- path: /docs/visitors-map/
+  title: Visitors-Map / Docs
+- path: /blog/2008/01/how-to-setup-eclipse-php-debugging-on-windows/
+  title: How-To-Setup-Eclipse-Php-Debugging-On-Windows / Blog
+- path: /docs/setup-auto-archiving/
+  title: Setup-Auto-Archiving / Docs
+- path: /docs/tracking-api/reference/
+  title: Reference / Tracking-Api / Docs
+- path: /faq/plugins/
+  title: Plugins / Faq
+- path: /download-guide/
+  title: Download-Guide
+- path: /blog/2011/06/import-log-files-piwik/
+  title: Import-Log-Files-Piwik / Blog
+- path: /docs/manage-websites/
+  title: Manage-Websites / Docs
+- path: /blog/2012/12/piwik-how-to-videos/
+  title: Piwik-How-To-Videos / Blog
+- path: /blog/2012/10/welcome-to-piwik-analytics-video/
+  title: Welcome-To-Piwik-Analytics-Video / Blog
+- path: /docs/analytics-api/calling-techniques/
+  title: Calling-Techniques / Analytics-Api / Docs
+- path: /blog/2009/04/if-you-need-to-serve-ads-on-your-website-check-out-openx-ad-server-28/
+  title: If-You-Need-To-Serve-Ads-On-Your-Website-Check-Out-Openx-Ad-Server-28 / Blog
+- path: /blog/2008/01/how-to-design-an-api-best-practises-concepts-technical-aspects/
+  title: How-To-Design-An-Api-Best-Practises-Concepts-Technical-Aspects / Blog
+- path: /consulting/
+  title: Consulting
+- path: /blog/2012/10/how-to-install-piwik-analytics-video/
+  title: How-To-Install-Piwik-Analytics-Video / Blog
+- path: /search/
+  title: Search
+- path: /blog/2012/10/how-to-setup-piwik-analytics-video/
+  title: How-To-Setup-Piwik-Analytics-Video / Blog
+- path: /blog/2012/10/custom-variable-case-study-divezone-net/
+  title: Custom-Variable-Case-Study-Divezone-Net / Blog
+- path: /blog/category/development/
+  title: Development / Category / Blog
+- path: /docs/optimize/
+  title: Optimize / Docs
+- path: /free-software/
+  title: Free-Software
+- path: /security/
+  title: Security
+- path: /participate/user-feedback/
+  title: User-Feedback / Participate
+- path: /docs/embed-piwik-report/
+  title: Embed-Piwik-Report / Docs
+- path: /blog/integrate/mantis-plugin-piwik/
+  title: Mantis-Plugin-Piwik / Integrate / Blog
+- path: /blog/category/plugins/
+  title: Plugins / Category / Blog
+- path: /blog/category/community/
+  title: Community / Category / Blog
+- path: /blog/integrate/vbulletin-addon-to-integrate-piwik/
+  title: Vbulletin-Addon-To-Integrate-Piwik / Integrate / Blog
+- path: /blog/author/admin-2/
+  title: Admin-2 / Author / Blog
+- path: /blog/integrate/phpbb-setup-instructions-to-track-with-piwik/
+  title: Phpbb-Setup-Instructions-To-Track-With-Piwik / Integrate / Blog
+- path: /docs/real-time/visitor-world-map/
+  title: Visitor-World-Map / Real-Time / Docs
+- path: /blog/2010/03/softaculous-now-supports-piwik/
+  title: Softaculous-Now-Supports-Piwik / Blog
+- path: /blog/2012/10/using-custom-variables-in-piwik-tutorial/
+  title: Using-Custom-Variables-In-Piwik-Tutorial / Blog
+- path: /media/
+  title: Media
+- path: /docs/transitions/
+  title: Transitions / Docs
+- path: /donate/
+  title: Donate
+- path: /docs/plugins/hooks/
+  title: Hooks / Plugins / Docs
+- path: /blog/2013/05/piwik-1-12/
+  title: Piwik-1-12 / Blog
+- path: /blog/2008/06/new-plugin-wordpress-piwik-integration/
+  title: New-Plugin-Wordpress-Piwik-Integration / Blog
+- path: /blog/2012/11/piwik-web-analytics-essentials-book-review/
+  title: Piwik-Web-Analytics-Essentials-Book-Review / Blog
+- path: /blog/2008/06/new-plugin-typo3-integration/
+  title: New-Plugin-Typo3-Integration / Blog
+- path: /blog/2012/08/google2piwik-update/
+  title: Google2Piwik-Update / Blog
+- path: /blog/2010/04/simplescripts-now-supports-piwik/
+  title: Simplescripts-Now-Supports-Piwik / Blog
+- path: /user-guide/video-tracking-goals/
+  title: Video-Tracking-Goals / User-Guide
+- path: /docs/email-reports/
+  title: Email-Reports / Docs
+- path: /docs/optimize/how-to/
+  title: How-To / Optimize / Docs
+- path: /security/how-to-secure-piwik/
+  title: How-To-Secure-Piwik / Security
+- path: /blog/2012/08/get-started-with-piwik-development-with-puppet-and-vagrant/
+  title: Get-Started-With-Piwik-Development-With-Puppet-And-Vagrant / Blog
+- path: /compare/
+  title: Compare
+- path: /blog/2011/01/piwik-1-1-1/
+  title: Piwik-1-1-1 / Blog
+- path: /docs/annotations/
+  title: Annotations / Docs
+- path: /blog/2013/03/new-v1-11-new-features-design-changes-overview-w-screenshots/
+  title: New-V1-11-New-Features-Design-Changes-Overview-W-Screenshots / Blog
+- path: /docs/page-speed/
+  title: Page-Speed / Docs
+- path: /press-review/
+  title: Press-Review
+- path: /blog/2010/07/making-piwik-ui-faster/
+  title: Making-Piwik-Ui-Faster / Blog
+- path: /blog/2013/05/last-piwik-1-x-release-v1-12-new-features-api-improvements-screenshots/
+  title: Last-Piwik-1-X-Release-V1-12-New-Features-Api-Improvements-Screenshots / Blog
+- path: /docs/include-piwik-in-your-project/
+  title: Include-Piwik-In-Your-Project / Docs
+- path: /blog/2012/09/survey-results-thanks-for-the-feedback/
+  title: Survey-Results-Thanks-For-The-Feedback / Blog
+- path: /participate/user-interface/
+  title: User-Interface / Participate
+- path: /blog/2012/01/piwik-best-alternative-to-urchin-web-analytics-via-log-files-import/
+  title: Piwik-Best-Alternative-To-Urchin-Web-Analytics-Via-Log-Files-Import / Blog
+- path: /translations/
+  title: Translations
+- path: /log-analytics/faq/
+  title: Faq / Log-Analytics
+- path: /testimonials/
+  title: Testimonials
+- path: /submit-testimonial/
+  title: Submit-Testimonial
+- path: /log-analytics/web-hosting-use-case/
+  title: Web-Hosting-Use-Case / Log-Analytics
+- path: /blog/2008/01/the-best-api-for-web-analytics/
+  title: The-Best-Api-For-Web-Analytics / Blog
+- path: /blog/2013/03/piwik-at-the-2013-open-source-conference-in-japan/
+  title: Piwik-At-The-2013-Open-Source-Conference-In-Japan / Blog
+- path: /blog/category/releases/
+  title: Releases / Category / Blog
+- path: /blog/2010/05/piwik-user-interface-new-design-give-your-feedback/
+  title: Piwik-User-Interface-New-Design-Give-Your-Feedback / Blog
+- path: /mobile/v2/
+  title: V2 / Mobile
+- path: /blog/2009/09/piwik-wins-best-of-open-source-enterprise-software-web-analytics/
+  title: Piwik-Wins-Best-Of-Open-Source-Enterprise-Software-Web-Analytics / Blog
+- path: /faq/how-to-update/
+  title: How-To-Update / Faq
+- path: /blog/2008/10/using-the-piwik-api-and-adobe-air-interesting-use-cases/
+  title: Using-The-Piwik-Api-And-Adobe-Air-Interesting-Use-Cases / Blog
+- path: /blog/2010/01/plugin-piwik-inside-your-joomla-panel/
+  title: Plugin-Piwik-Inside-Your-Joomla-Panel / Blog
+- path: /blog/2012/10/integrate-piwik-into-your-rails-application/
+  title: Integrate-Piwik-Into-Your-Rails-Application / Blog
+- path: /blog/2012/10/wordpress-integration-with-wp-piwik/
+  title: Wordpress-Integration-With-Wp-Piwik / Blog
+- path: /blog/2013/01/piwik-1-10/
+  title: Piwik-1-10 / Blog
+- path: /user-guide/video-learn-about-your-website-visitors/
+  title: Video-Learn-About-Your-Website-Visitors / User-Guide
+- path: /blog/category/about/
+  title: About / Category / Blog
+- path: /blog/2013/02/c-sharp-tracking-and-analytics-api/
+  title: C-Sharp-Tracking-And-Analytics-Api / Blog
+- path: /blog/2012/06/piwik-1-8/
+  title: Piwik-1-8 / Blog
+- path: /privacy/policy/
+  title: Policy / Privacy
+- path: /blog/2012/07/piwik-high-scale-performance-report-as-of-july-2012/
+  title: Piwik-High-Scale-Performance-Report-As-Of-July-2012 / Blog
+- path: /blog/2012/02/piwik-1-7-1/
+  title: Piwik-1-7-1 / Blog
+- path: /blog/2012/12/happy-new-year/
+  title: Happy-New-Year / Blog
+- path: /docs/managing-your-databases-size/
+  title: Managing-Your-Databases-Size / Docs
+- path: /PRIVACY/
+  title: Privacy
+- path: /shop/
+  title: Shop
+- path: /?s=
+  title: ROOT
+- path: /docs/row-evolution/
+  title: Row-Evolution / Docs
+- path: /blog/2009/06/7-reasons-why-your-commercial-site-needs-piwik/
+  title: 7-Reasons-Why-Your-Commercial-Site-Needs-Piwik / Blog
+- path: /blog/category/releases/page/2/
+  title: Releases / Category / Blog
+- path: /blog/2011/03/piwik-1-2-custom-variables-first-party-cookies-and-more/
+  title: Piwik-1-2-Custom-Variables-First-Party-Cookies-And-More / Blog
+- path: /participate/website-translations/instructions/
+  title: Instructions / Website-Translations / Participate
+- path: /blog/category/piwik-mobile-changelog/page/2/
+  title: Piwik-Mobile-Changelog / Category / Blog
+- path: /blog/2010/08/piwik-0-5-4-remix-by-parallels-security-advisory/
+  title: Piwik-0-5-4-Remix-By-Parallels-Security-Advisory / Blog
+- path: /blog/2010/08/piwik-mobile-out-now/
+  title: Piwik-Mobile-Out-Now / Blog
+- path: /changelog/?cat_ID=15
+  title: Changelog
+- path: /blog/2010/08/piwik-on-web-app-gallery/?pk_campaign=Email-Nov2011&pk_kwd=LearnMore
+  title: Piwik-On-Web-App-Gallery / Blog
+- path: /qa/
+  title: Qa
+- path: /blog/2012/06/piwik-1-8-release-new-features-screenshots-overview/
+  title: Piwik-1-8-Release-New-Features-Screenshots-Overview / Blog
+- path: /blog/2011/06/piwik-innovative-with-javascript-canvas-chart-and-contributing-by-jqplot-creator/
+  title: Piwik-Innovative-With-Javascript-Canvas-Chart-And-Contributing-By-Jqplot-Creator / Blog
+- path: /participate/website-translations/
+  title: Website-Translations / Participate
+- path: /participate/website-translations/requirements/
+  title: Requirements / Website-Translations / Participate
+- path: /blog/2013/03/install-piwik-with-1-click-using-installatron/
+  title: Install-Piwik-With-1-Click-Using-Installatron / Blog
+- path: /donate/thank-you/
+  title: Thank-You / Donate
+- path: /blog/category/security/
+  title: Security / Category / Blog
+- path: /blog/2008/06/german-video-tutorial-how-to-install-piwik/
+  title: German-Video-Tutorial-How-To-Install-Piwik / Blog
+- path: /shop/stickers/
+  title: Stickers / Shop
+- path: /blog/2012/07/best-alternative-yahoo-analytics/
+  title: Best-Alternative-Yahoo-Analytics / Blog
+- path: /docs/plugins/framework-overview/
+  title: Framework-Overview / Plugins / Docs
+- path: /blog/2010/03/piwik-irc-meetup-1/
+  title: Piwik-Irc-Meetup-1 / Blog
+- path: /blog/2013/06/piwik-mobile-2-preview-alpha-release/?pk_campaign=Email-Nov2011&pk_kwd=LearnMore
+  title: Piwik-Mobile-2-Preview-Alpha-Release / Blog
+- path: /blog/2008/04/bloggers-blog-about-piwik-worldwide/
+  title: Bloggers-Blog-About-Piwik-Worldwide / Blog
+- path: /participate/contributing-with-git/
+  title: Contributing-With-Git / Participate
+- path: /blog/2010/07/new-piwik-tracking-api-track-visits-from-mobile-apps-desktop-apps-anywhere/
+  title: New-Piwik-Tracking-Api-Track-Visits-From-Mobile-Apps-Desktop-Apps-Anywhere / Blog
+- path: /blog/category/meta/
+  title: Meta / Category / Blog
+- path: /blog/2010/08/open-source-world-map-for-piwik/
+  title: Open-Source-World-Map-For-Piwik / Blog
+- path: /blog/2013/01/web-analytics-governments/
+  title: Web-Analytics-Governments / Blog
+- path: /user-guide/video-actions-reports-page-views-downloads-clicks/
+  title: Video-Actions-Reports-Page-Views-Downloads-Clicks / User-Guide
+- path: /user-guide/referrers-reports/
+  title: Referrers-Reports / User-Guide
+- path: /blog/2009/06/7-reasons-why-your-commercial-site-needs-piwik/)
+  title: ) / 7-Reasons-Why-Your-Commercial-Site-Needs-Piwik / Blog
+- path: /blog/2009/02/software-geeks-how-piwik-automatically-generates-the-api-using-php-reflection/
+  title: Software-Geeks-How-Piwik-Automatically-Generates-The-Api-Using-Php-Reflection / Blog
+- path: /blog/2013/04/piwik-mobile-1-9-5/
+  title: Piwik-Mobile-1-9-5 / Blog
+- path: /blog/2012/06/integrate-piwik-with-your-cms-ecommerce-framework-or-programming-language/
+  title: Integrate-Piwik-With-Your-Cms-Ecommerce-Framework-Or-Programming-Language / Blog
+- path: /blog/2012/12/the-march-towards-piwik-2-0-and-crowdfunding/
+  title: The-March-Towards-Piwik-2-0-And-Crowdfunding / Blog
+- path: /blog/tasks/add-system-check-page-in-admin-section/
+  title: Add-System-Check-Page-In-Admin-Section / Tasks / Blog
+- path: /blog/category/piwik-mobile-changelog/
+  title: Piwik-Mobile-Changelog / Category / Blog
+- path: /blog/2012/08/new-piwik-release-v1-8-3-features-overview-w-screenshots/
+  title: New-Piwik-Release-V1-8-3-Features-Overview-W-Screenshots / Blog
+- path: /blog/2013/01/webinar-webstatistik-mit-piwik/
+  title: Webinar-Webstatistik-Mit-Piwik / Blog
+- path: /blog/2013/04/alwaysdata-web-hosting-piwik-org/
+  title: Alwaysdata-Web-Hosting-Piwik-Org / Blog
+- path: /blog/2009/05/100000-downloads-milestone/
+  title: 100000-Downloads-Milestone / Blog
+- path: /blog/page/2/
+  title: Blog
+- path: /blog/page/3/
+  title: Blog
+- path: /blog/2008/11/keep-track-of-new-piwik-versions-and-changes-with-the-changelog-page-and-feed/
+  title: Keep-Track-Of-New-Piwik-Versions-And-Changes-With-The-Changelog-Page-And-Feed / Blog
+- path: /blog/2012/10/new-piwik-release-v1-9-features-overview-w-screenshots/
+  title: New-Piwik-Release-V1-9-Features-Overview-W-Screenshots / Blog
+- path: /blog/2008/11/new-version-of-piwik-why-you-should-upgrade/
+  title: New-Version-Of-Piwik-Why-You-Should-Upgrade / Blog
+- path: /blog/2013/07/first-beta-of-piwik-mobile-2-for-android/
+  title: First-Beta-Of-Piwik-Mobile-2-For-Android / Blog
+- path: /blog/2012/10/analytics-data-your-way-free-with-piwik-analytics-brand-new-features-press-release/
+  title: Analytics-Data-Your-Way-Free-With-Piwik-Analytics-Brand-New-Features-Press-Release / Blog
+- path: /blog/2013/01/new-piwik-release-v1-10-major-new-features-overview-w-screenshots-2/
+  title: New-Piwik-Release-V1-10-Major-New-Features-Overview-W-Screenshots-2 / Blog
+- path: /integrate/how-to/
+  title: How-To / Integrate
+- path: /managing-your-databases-size/purge_schedule_period2/
+  title: Purge_Schedule_Period2 / Managing-Your-Databases-Size
+- path: /blog/2010/12/new-version-of-piwik-mobile-released-screenshots/
+  title: New-Version-Of-Piwik-Mobile-Released-Screenshots / Blog
+- path: /user-guide/video-email-and-sms-reports/
+  title: Video-Email-And-Sms-Reports / User-Guide
+- path: /blog/2012/04/urchin-is-discontinued-piwik-server-log-import-goes-live/
+  title: Urchin-Is-Discontinued-Piwik-Server-Log-Import-Goes-Live / Blog
+- path: /participate/licensing/
+  title: Licensing / Participate
+- path: /blog/2009/12/piwik-response-to-shocking-news-in-php-exploitation/
+  title: Piwik-Response-To-Shocking-News-In-Php-Exploitation / Blog
+- path: /blog/2011/01/piwik-1-1-2/
+  title: Piwik-1-1-2 / Blog
+- path: /blog/2011/03/piwik-can-be-used-in-compliance-with-data-protection-laws/
+  title: Piwik-Can-Be-Used-In-Compliance-With-Data-Protection-Laws / Blog
+- path: /blog/2013/02/piwik-microsoft-windows-web-app-gallery/
+  title: Piwik-Microsoft-Windows-Web-App-Gallery / Blog
+- path: /blog/2008/12/piwik-0227/
+  title: Piwik-0227 / Blog
+- path: /blog/integrate/dnnp-dotnetnuke-plugin/
+  title: Dnnp-Dotnetnuke-Plugin / Integrate / Blog
+- path: /blog/2012/10/piwik-mobile-1-9-2/
+  title: Piwik-Mobile-1-9-2 / Blog
+- path: /free-software/bsd/
+  title: Bsd / Free-Software
+- path: /blog/2011/06/piwik-1-5-available-ecommerce-analytics/
+  title: Piwik-1-5-Available-Ecommerce-Analytics / Blog
+- path: /blog/2008/07/new-plugin-piwik-dokuwiki-integration/
+  title: New-Plugin-Piwik-Dokuwiki-Integration / Blog
+- path: /docs/plugins/functions/
+  title: Functions / Plugins / Docs
+- path: /blog/integrate/typo3-extension-piwik-integration/
+  title: Typo3-Extension-Piwik-Integration / Integrate / Blog
+- path: /blog/integrate/spip-contrib-piwik/
+  title: Spip-Contrib-Piwik / Integrate / Blog
+- path: /blog/2008/06/however-im-not-normal-so-piwik-has-made-me-sit-up-and-say-oooh/
+  title: However-Im-Not-Normal-So-Piwik-Has-Made-Me-Sit-Up-And-Say-Oooh / Blog
+- path: /blog/2009/11/piwik-goal-tracking-how-i-optimized-my-affiliate-income/
+  title: Piwik-Goal-Tracking-How-I-Optimized-My-Affiliate-Income / Blog
+- path: /blog/2008/06/invitation-piwik-focus-group-in-london-on-saturday-july-5th/
+  title: Invitation-Piwik-Focus-Group-In-London-On-Saturday-July-5Th / Blog
+- path: /blog/2011/06/piwik-1-5/
+  title: Piwik-1-5 / Blog
+- path: /blog/integrate/oxid-analyse-plugin-for-piwik/
+  title: Oxid-Analyse-Plugin-For-Piwik / Integrate / Blog
+- path: /blog/2010/08/piwik-1-0/
+  title: Piwik-1-0 / Blog
+- path: /blog/2010/12/better-piwik-forums/
+  title: Better-Piwik-Forums / Blog
+- path: /blog/2011/02/piwik-1-2/
+  title: Piwik-1-2 / Blog
+- path: /blog/2012/10/integrate-piwik-into-your-rails-application/piwik_site_id/
+  title: Piwik_Site_Id / Integrate-Piwik-Into-Your-Rails-Application / Blog
+- path: /blog/2011/01/professional-security-audit-in-piwik/
+  title: Professional-Security-Audit-In-Piwik / Blog
+- path: /blog/2011/01/piwik-mobile-1-0-0/
+  title: Piwik-Mobile-1-0-0 / Blog
+- path: /blog/2010/02/piwik-response-to-zend-framework-security-advisory-zf2010-01/
+  title: Piwik-Response-To-Zend-Framework-Security-Advisory-Zf2010-01 / Blog
+- path: /blog/tag/magento-extension/
+  title: Magento-Extension / Tag / Blog
+- path: /blog/2008/05/spotitv-is-looking-to-hire-a-full-time-developer-to-make-piwik-scalable/
+  title: Spotitv-Is-Looking-To-Hire-A-Full-Time-Developer-To-Make-Piwik-Scalable / Blog
+- path: /chanchelog/
+  title: Chanchelog
+- path: /docs/managing-your-databases-size/%27
+  title: ''' / Managing-Your-Databases-Size / Docs'
+- path: /blog/2008/06/new-plugin-mediawiki-piwik-integration/
+  title: New-Plugin-Mediawiki-Piwik-Integration / Blog
+- path: /blog/2012/10/piwik-1-9/
+  title: Piwik-1-9 / Blog
+- path: /blog/2012/10/piwik-1-9-1/
+  title: Piwik-1-9-1 / Blog
+- path: /blog/2012/11/conference-sur-piwik-le-samedi-24-novembre-a-supinfo-paris/
+  title: Conference-Sur-Piwik-Le-Samedi-24-Novembre-A-Supinfo-Paris / Blog
+- path: /blog/2012/11/piwik-1-9-2/
+  title: Piwik-1-9-2 / Blog
+- path: /blog/2012/11/piwik-mobile-1-9-3-2/
+  title: Piwik-Mobile-1-9-3-2 / Blog
+- path: /blog/2012/12/piwik-needs-your-help-now/
+  title: Piwik-Needs-Your-Help-Now / Blog
+- path: /blog/2013/02/piwik-mobile-1-9-4/
+  title: Piwik-Mobile-1-9-4 / Blog
+- path: /blog/2013/03/quick-updates-google-beta-1-11-and-french-support/
+  title: Quick-Updates-Google-Beta-1-11-And-French-Support / Blog
+- path: /blog/2013/03/piwik-1-11/
+  title: Piwik-1-11 / Blog
+- path: /blog/category/press-release/
+  title: Press-Release / Category / Blog
+- path: /blog/2010/04/piwik-press-release/
+  title: Piwik-Press-Release / Blog
+- path: /blog/integrate/ecommerce-analytics-for-virtuemart/
+  title: Ecommerce-Analytics-For-Virtuemart / Integrate / Blog
+- path: /API
+  title: Api
+- path: /blog/2008/03/welcome-piwik-beta-version/
+  title: Welcome-Piwik-Beta-Version / Blog
+- path: /blog/2008/04/have-you-got-a-website-with-more-than-10000-visits-per-day-you-can-help-us-test-piwik/
+  title: Have-You-Got-A-Website-With-More-Than-10000-Visits-Per-Day-You-Can-Help-Us-Test-Piwik / Blog
+- path: /blog/integrate_categories/ecommerce-online-shops/
+  title: Ecommerce-Online-Shops / Integrate_Categories / Blog
+- path: /trademark/
+  title: Trademark
+- path: /blog/2010/07/piwik-0-7/
+  title: Piwik-0-7 / Blog
+- path: /newsletter/
+  title: Newsletter
+- path: /docs/custom-variables/google%20analytics
+  title: Google Analytics / Custom-Variables / Docs
+- path: /api
+  title: Api
+- path: /participate/agreement-form/
+  title: Agreement-Form / Participate
+- path: /blog/page/8/
+  title: Blog
+- path: /blog/page/28/
+  title: Blog
+- path: /blog/page/18/
+  title: Blog
+- path: /blog/page/10/
+  title: Blog
+- path: /blog/page/16/
+  title: Blog
+- path: /blog/page/14/
+  title: Blog
+- path: /blog/page/12/
+  title: Blog
+- path: /blog/2008/01/hello-the-web-analytics-world/
+  title: Hello-The-Web-Analytics-World / Blog
+- path: /blog/integrate/laravel-piwik-bundle/
+  title: Laravel-Piwik-Bundle / Integrate / Blog
+- path: /blog/2013/03/new-v1-12-new-features-design-changes-overview-w-screenshots/
+  title: New-V1-12-New-Features-Design-Changes-Overview-W-Screenshots / Blog
+- path: /blog/author/admin-2/page/3/
+  title: Admin-2 / Author / Blog
+- path: /blog/2013/07/wanted-beta-testers-for-piwik-mobile-2-for-ios/
+  title: Wanted-Beta-Testers-For-Piwik-Mobile-2-For-Ios / Blog
+- path: /blog/2011/02/reshaping-piwik-documentation/?pk_campaign=Email-Nov2011&pk_kwd=OrderNow
+  title: Reshaping-Piwik-Documentation / Blog
+- path: /blog/2009/04/piwik-response-to-cve-2009-1085/
+  title: Piwik-Response-To-Cve-2009-1085 / Blog
+- path: /blog/roadmap_categories/new-features-for-piwik/
+  title: New-Features-For-Piwik / Roadmap_Categories / Blog
+- path: /mobile/v2/faq/
+  title: Faq / V2 / Mobile
+- path: /blog/2011/07/ecommerce-analytics-is-hard/?pk_campaign=Email-Nov2011&pk_kwd=OrderNow
+  title: Ecommerce-Analytics-Is-Hard / Blog
+- path: /blog/2011/09/announcing-piwik-meetup-in-munich-germany-on-oct-22nd-register-now-free/
+  title: Announcing-Piwik-Meetup-In-Munich-Germany-On-Oct-22Nd-Register-Now-Free / Blog
+- path: /blog/2009/06/new-piwik-javascript-tracking-api-how-we-designed-it/
+  title: New-Piwik-Javascript-Tracking-Api-How-We-Designed-It / Blog
+- path: /docs/piwik-org
+  title: Piwik-Org / Docs
+- path: /docs/requirements/%EF%BC%89
+  title: "\uFF09 / Requirements / Docs"
+- path: /timeline/
+  title: Timeline
+- path: /shop/merchandise/
+  title: Merchandise / Shop
+- path: /blog/2012/02/7775/
+  title: 7775 / Blog
+- path: /docs/setup-auto-archiving/%3cbr/
+  title: <Br / Setup-Auto-Archiving / Docs
+- path: /blog/2012/03/piwik-mobile-1-7/
+  title: Piwik-Mobile-1-7 / Blog
+- path: /blog/about-features/goal-conversion-tracking/
+  title: Goal-Conversion-Tracking / About-Features / Blog
+- path: /blog/users/
+  title: Users / Blog
+- path: /old-roadmap/
+  title: Old-Roadmap
+- path: /blog/integrate/roundcube-webmail-plugin-piwik-analytics/
+  title: Roundcube-Webmail-Plugin-Piwik-Analytics / Integrate / Blog
+- path: /blog/integrate/kooboo-piwik-plugin/
+  title: Kooboo-Piwik-Plugin / Integrate / Blog
+- path: /blog/about-features/domain-cookie-behaviour/?pk_campaign=Email-Nov2011&pk_kwd=OrderNow
+  title: Domain-Cookie-Behaviour / About-Features / Blog
+- path: /blog/integrate/piwiktracker-for-objective-c/
+  title: Piwiktracker-For-Objective-C / Integrate / Blog
+- path: /blog/integrate_categories/programming-language/
+  title: Programming-Language / Integrate_Categories / Blog
+- path: /blog/tasks/page-transitions-clickpath-to-show-previousnext-pages-for-any-selected-page-clickpath-page-analytics-now-available-since-piwik-1-9/
+  title: Page-Transitions-Clickpath-To-Show-Previousnext-Pages-For-Any-Selected-Page-Clickpath-Page-Analytics-Now-Available-Since-Piwik-1-9 / Tasks / Blog
+- path: /blog/2012/06/piwik-1-8-1/
+  title: Piwik-1-8-1 / Blog
+- path: /docs/installation/%3C
+  title: < / Installation / Docs
+- path: /blog/2011/07/how-can-we-improve-the-website-piwik-org-feedback-suggestions/
+  title: How-Can-We-Improve-The-Website-Piwik-Org-Feedback-Suggestions / Blog
+- path: /blog/tasks/open-source-svg-world-map-to-show-regions-and-cities-be-100-flash-free/
+  title: Open-Source-Svg-World-Map-To-Show-Regions-And-Cities-Be-100-Flash-Free / Tasks / Blog
+- path: /blog/2009/02/piwik-consulting-find-paid-support-custom-plugin-development-from-approved-piwik-consultants/
+  title: Piwik-Consulting-Find-Paid-Support-Custom-Plugin-Development-From-Approved-Piwik-Consultants / Blog
+- path: /blog/2012/06/web-analytics-platform-reaches-1-million-downloads/
+  title: Web-Analytics-Platform-Reaches-1-Million-Downloads / Blog
+- path: /blog/2011/06/piwik-1-5-piwik-mobile-app-1-5-release-candidates-call-for-testers/
+  title: Piwik-1-5-Piwik-Mobile-App-1-5-Release-Candidates-Call-For-Testers / Blog
+- path: /blog/2008/11/piwik-and-translations-update/
+  title: Piwik-And-Translations-Update / Blog
+- path: /blog/tasks/piwik-as-the-ultimate-urchin-alternative-and-awstats-alternative-modern-web-analytics-from-server-logs-now-available-since-piwik-1-8/
+  title: Piwik-As-The-Ultimate-Urchin-Alternative-And-Awstats-Alternative-Modern-Web-Analytics-From-Server-Logs-Now-Available-Since-Piwik-1-8 / Tasks / Blog
+- path: /blog/2012/02/new-features-in-piwik-1-7-screenshots/
+  title: New-Features-In-Piwik-1-7-Screenshots / Blog
+- path: /blog/users/
+  title: Users / Blog
+- path: /blog/2011/11/piwik-mobile-1-6-2/
+  title: Piwik-Mobile-1-6-2 / Blog
+- path: /blog/2010/04/piwik-org-website-now-available-in-german/
+  title: Piwik-Org-Website-Now-Available-In-German / Blog
+- path: /blog/tasks/create-custom-alerts-on-any-piwik-reports-and-metrics-and-automatically-receive-an-email-when-they-are-triggered/
+  title: Create-Custom-Alerts-On-Any-Piwik-Reports-And-Metrics-And-Automatically-Receive-An-Email-When-They-Are-Triggered / Tasks / Blog
+- path: /blog/2011/11/new-quality-piwik-t-shirts-now-available/
+  title: New-Quality-Piwik-T-Shirts-Now-Available / Blog
+- path: /suggest-a-topic/
+  title: Suggest-A-Topic
+- path: /blog/2010/08/piwik-0-9-9/
+  title: Piwik-0-9-9 / Blog
+- path: /blog/integrate/grails-plugin/
+  title: Grails-Plugin / Integrate / Blog
+- path: /blog/2011/10/piwik-1-6/?pk_campaign=Email-Nov2011&pk_kwd=OrderNow
+  title: Piwik-1-6 / Blog
+- path: /blog/2011/06/piwik-mobile-1-5/piwikmobile150ios3pages/
+  title: Piwikmobile150Ios3Pages / Piwik-Mobile-1-5 / Blog
+- path: /blog/2011/06/piwik-1-5-security-advisory/
+  title: Piwik-1-5-Security-Advisory / Blog
+- path: /blog/2011/04/piwik-1-3-released/
+  title: Piwik-1-3-Released / Blog
+- path: /crowdfunding/
+  title: Crowdfunding
+- path: /blog/2011/06/piwik-mobile-1-5/piwikmobile150ios4graphdetailview/
+  title: Piwikmobile150Ios4Graphdetailview / Piwik-Mobile-1-5 / Blog
+- path: /blog/2012/04/how-to-use-piwik-to-track-mobile-apps-activity-clicks-phones-errors-etc/piwik-optin-example-3/
+  title: Piwik-Optin-Example-3 / How-To-Use-Piwik-To-Track-Mobile-Apps-Activity-Clicks-Phones-Errors-Etc / Blog
+- path: /blog/2009/06/piwik-04/
+  title: Piwik-04 / Blog
+- path: /forum-header/
+  title: Forum-Header
+- path: /blog/2011/10/piwik-mobile-1-6/
+  title: Piwik-Mobile-1-6 / Blog
+- path: /blog/2010/07/new-piwik-design-screenshots/
+  title: New-Piwik-Design-Screenshots / Blog
+- path: /blog/2009/09/piwik-is-sourceforge-project-of-the-month/
+  title: Piwik-Is-Sourceforge-Project-Of-The-Month / Blog
+- path: /blog/integrate/knppiwikbundle-for-symfony2/
+  title: Knppiwikbundle-For-Symfony2 / Integrate / Blog
+- path: /blog/2008/11/piwik-in-the-grand-canyon/
+  title: Piwik-In-The-Grand-Canyon / Blog
+- path: /the-piwik-team/de/
+  title: De / The-Piwik-Team
+- path: /blog/tag/rails/
+  title: Rails / Tag / Blog
+- path: /blog/2011/02/should-we-offer-piwik-hosted/
+  title: Should-We-Offer-Piwik-Hosted / Blog
+- path: /blog/author/fabian/
+  title: Fabian / Author / Blog
+- path: /blog/integrate/elgg-plugin-piwik/
+  title: Elgg-Plugin-Piwik / Integrate / Blog
+- path: /i
+  title: I
+- path: /blog/2008/02/why-is-piwik-better-than-the-competition/
+  title: Why-Is-Piwik-Better-Than-The-Competition / Blog
+- path: /blog/integrate_categories/integrate-category/?pk_campaign=Email-Nov2011&pk_kwd=OrderNow
+  title: Integrate-Category / Integrate_Categories / Blog
+- path: /blog/tasks/send-scheduled-reports-via-sms-text-message/
+  title: Send-Scheduled-Reports-Via-Sms-Text-Message / Tasks / Blog
+- path: /blog/2011/04/piwik-1-4/
+  title: Piwik-1-4 / Blog
+- path: /blog/2012/07/piwik-japan-team-exhibited-at-the-interop-tokyo-2012-convention/
+  title: Piwik-Japan-Team-Exhibited-At-The-Interop-Tokyo-2012-Convention / Blog
+- path: /blog/2012/09/piwik-mobile-1-9-1/
+  title: Piwik-Mobile-1-9-1 / Blog
+- path: /docs/api
+  title: Api / Docs
+- path: /blog/tasks/support-5-custom-variables-at-the-visit-level-and-provide-new-reports-on-these-variables-now-available-in-piwik-1-1/
+  title: Support-5-Custom-Variables-At-The-Visit-Level-And-Provide-New-Reports-On-These-Variables-Now-Available-In-Piwik-1-1 / Tasks / Blog
+- path: /blog/2008/06/new-plugin-dotclear2-integration/
+  title: New-Plugin-Dotclear2-Integration / Blog
+- path: /blog/2012/09/piwik-1-8-4/
+  title: Piwik-1-8-4 / Blog
+- path: /user-guide/track-your-visitors/
+  title: Track-Your-Visitors / User-Guide
+- path: /blog/2009/10/piwik-response-to-secunia-advisory-sa37078/
+  title: Piwik-Response-To-Secunia-Advisory-Sa37078 / Blog
+- path: /blog/integrate/piwik-integration-for-ilias/
+  title: Piwik-Integration-For-Ilias / Integrate / Blog
+- path: /blog/integrate/piwik-integration-for-xenforo/?pk_campaign=Email-Nov2011&pk_kwd=LearnMore
+  title: Piwik-Integration-For-Xenforo / Integrate / Blog
+- path: /blog/integrate/integrate-the-piwik-http-api-into-joomla/
+  title: Integrate-The-Piwik-Http-Api-Into-Joomla / Integrate / Blog
+- path: /blog/integrate/?pk_campaign=Email-Nov2011&pk_kwd=OrderNow
+  title: Integrate / Blog
+- path: /page/5
+  title: ROOT
+- path: /page/8
+  title: ROOT
+- path: /participate/development-metrics/
+  title: Development-Metrics / Participate
+- path: /blog/2013/06/piwik-mobile-1-9-6/
+  title: Piwik-Mobile-1-9-6 / Blog
+- path: /blog/integrate/nodejs-piwik/?pk_campaign=Email-Nov2011&pk_kwd=OrderNow
+  title: Nodejs-Piwik / Integrate / Blog
+- path: /blog/2010/03/piwik-irc-meetup-2/?pk_campaign=Email-Nov2011&pk_kwd=LearnMore
+  title: Piwik-Irc-Meetup-2 / Blog
+- path: /gmistudio
+  title: Gmistudio
+- path: /h72
+  title: H72
+- path: /user-guide/piwik-administration/
+  title: Piwik-Administration / User-Guide
+- path: /blog/tasks/show-graph-of-visitspages-over-the-last-30-days-for-a-specific-row-keyword-country-etc-see-the-new-row-evolution-screenshots/
+  title: Show-Graph-Of-Visitspages-Over-The-Last-30-Days-For-A-Specific-Row-Keyword-Country-Etc-See-The-New-Row-Evolution-Screenshots / Tasks / Blog
+- path: /blog/integrate/piwik-integration-for-drupal/
+  title: Piwik-Integration-For-Drupal / Integrate / Blog
+- path: /blog/2012/08/piwik-1-8-3/?pk_campaign=Email-Nov2011&pk_kwd=OrderNow
+  title: Piwik-1-8-3 / Blog
+- path: /participate/website-translations/more-info/
+  title: More-Info / Website-Translations / Participate
+- path: /blog/2012/10/using-custom-variables-in-piwik-tutorial/%C2%A0
+  title: "\_ / Using-Custom-Variables-In-Piwik-Tutorial / Blog"
+- path: /localhost
+  title: Localhost
+- path: /blog/2012/09/new-piwik-release-v1-8-4-features-overview-w-screenshots/
+  title: New-Piwik-Release-V1-8-4-Features-Overview-W-Screenshots / Blog
+- path: /blog/2009/04/piwik-0233/
+  title: Piwik-0233 / Blog
+- path: /docs/integration/integrate-piwik-with-your-cms-ecommerce-software-and-more/
+  title: Integrate-Piwik-With-Your-Cms-Ecommerce-Software-And-More / Integration / Docs
+- path: /blog/2010/04/piwik-0-6-security-advisory/
+  title: Piwik-0-6-Security-Advisory / Blog
+- path: /%20mobile/
+  title: ' Mobile'
+- path: /wenmar
+  title: Wenmar
+- path: /blog/category/community/page/2/?pk_campaign=Email-Nov2011&pk_kwd=LearnMore
+  title: Community / Category / Blog
+- path: /blog/integrate/silverlight-piwik-tracking/
+  title: Silverlight-Piwik-Tracking / Integrate / Blog
+- path: /blog/integrate/symfony-piwik-plugin/
+  title: Symfony-Piwik-Plugin / Integrate / Blog
+- path: /blog/2012/10/
+  title: Blog
+- path: /log-%C2%AD%E2%80%90analytics/
+  title: "Log-\xAD\u2010Analytics"
+- path: /blog/2011/06/piwik-mobile-1-5/
+  title: Piwik-Mobile-1-5 / Blog
+- path: /blog/2011/07/piwik-1-5-1/
+  title: Piwik-1-5-1 / Blog
+- path: /blog/category/development/page/2/?pk_campaign=Email-Nov2011&pk_kwd=LearnMore
+  title: Development / Category / Blog
+- path: /blog/integrate/zen-cart-plugin-for-piwik/
+  title: Zen-Cart-Plugin-For-Piwik / Integrate / Blog
+- path: /blog/tag/integration/
+  title: Integration / Tag / Blog
+- path: /blog/integrate/codeigniter-library-for-piwik/
+  title: Codeigniter-Library-For-Piwik / Integrate / Blog
+- path: /blog/integrate/ruby-on-rails-piwik-gem/
+  title: Ruby-On-Rails-Piwik-Gem / Integrate / Blog
+- path: /blog/integrate/c-client-for-analytics-api/
+  title: C-Client-For-Analytics-Api / Integrate / Blog
+- path: /demo/libs/open-flash-chart/open-flash-chart.swf?v2i
+  title: Open-Flash-Chart.Swf / Open-Flash-Chart / Libs / Demo
+- path: /demo/libs/open-flash-chart/open-flash-chart.swf
+  title: Open-Flash-Chart.Swf / Open-Flash-Chart / Libs / Demo
+- path: /%5D
+  title: ']'
+- path: /blog/2008/04/piwik-is-ready-to-be-translated-we-need-your-help/
+  title: Piwik-Is-Ready-To-Be-Translated-We-Need-Your-Help / Blog
+- path: /blog/2012/09/piwik-mobile-1-9/
+  title: Piwik-Mobile-1-9 / Blog
+- path: /trac/login
+  title: Login / Trac
+- path: /blog/2010/04/call-to-beta-testers-piwik-0-6-rc1/
+  title: Call-To-Beta-Testers-Piwik-0-6-Rc1 / Blog
+- path: /download-piwik
+  title: Download-Piwik
+- path: /blog/2008/02/piwik-presentation/
+  title: Piwik-Presentation / Blog
+- path: /t
+  title: T
+- path: /blog/2010/03/piwik-055/
+  title: Piwik-055 / Blog
+- path: /read.php?6,17251
+  title: Read.Php
+- path: /blog/tasks/include-country-city-detection-via-geoip-database-in-core-geo-locate-your-visitors-is-now-available-since-piwik-1-9/
+  title: Include-Country-City-Detection-Via-Geoip-Database-In-Core-Geo-Locate-Your-Visitors-Is-Now-Available-Since-Piwik-1-9 / Tasks / Blog
+- path: /faq/how-to/freebsd%20php%20folder
+  title: Freebsd Php Folder / How-To / Faq
+- path: /docs/installation/?codekitCB=398967303.973608
+  title: Installation / Docs
+- path: /blog/2011/03/piwik-1-2-1/
+  title: Piwik-1-2-1 / Blog
+- path: /blog/integrate/php-client-for-tracking-api/?pk_campaign=Blog&pk_kwd=More
+  title: Php-Client-For-Tracking-Api / Integrate / Blog
+- path: /free-software/mobile/
+  title: Mobile / Free-Software
+- path: /blog-7/
+  title: Blog-7
+- path: /blog/author/thomas/
+  title: Thomas / Author / Blog
+- path: /logos-proposal/
+  title: Logos-Proposal
+- path: /blog/tasks/faster-reliable-tracking-piwik-php-asynchronous-tracking-import/
+  title: Faster-Reliable-Tracking-Piwik-Php-Asynchronous-Tracking-Import / Tasks / Blog
+- path: /blog/tasks/asynchronous-javascript-tracking-code-for-faster-website-load-now-available-in-piwik-1-2/
+  title: Asynchronous-Javascript-Tracking-Code-For-Faster-Website-Load-Now-Available-In-Piwik-1-2 / Tasks / Blog
+- path: /blog/tasks/segmentation-implementation-ui-for-addingediting-and-switching-segments/
+  title: Segmentation-Implementation-Ui-For-Addingediting-And-Switching-Segments / Tasks / Blog
+- path: /blog/author/marc/
+  title: Marc / Author / Blog
+- path: /log-in
+  title: Log-In
+- path: /blog/author/julien/
+  title: Julien / Author / Blog
+- path: /blog/integrate/jenkins-module/
+  title: Jenkins-Module / Integrate / Blog
+- path: /blog/2013/08/piwik-at-free-and-open-source-software-conference/?pk_campaign=Blog&pk_kwd=More
+  title: Piwik-At-Free-And-Open-Source-Software-Conference / Blog
+- path: /404
+  title: '404'
+- path: /blog/page/15/
+  title: Blog
+- path: /blog/page/13/
+  title: Blog
+- path: /blog/2011/04/piwik-1-4-released-html-reports-beta-ipv6-support-better-campaign-tracking/
+  title: Piwik-1-4-Released-Html-Reports-Beta-Ipv6-Support-Better-Campaign-Tracking / Blog
+- path: /blog/2011/02/piwik-mobile-1-2/
+  title: Piwik-Mobile-1-2 / Blog
+- path: /blog/2011/04/piwik-1-3/
+  title: Piwik-1-3 / Blog
+- path: /analytics/cultizer
+  title: Cultizer / Analytics
+- path: /blog/2009/05/piwik-0235/
+  title: Piwik-0235 / Blog
+- path: /blog/2013/08/second-beta-of-piwik-mobile-2-for-android/
+  title: Second-Beta-Of-Piwik-Mobile-2-For-Android / Blog
+- path: /blog/2011/11/piwik-stickers-design-contest-prizes/?pk_campaign=Blog&pk_kwd=More
+  title: Piwik-Stickers-Design-Contest-Prizes / Blog
+- path: /blog/integrate/page/4/
+  title: Integrate / Blog
+- path: /blog/integrate/joomla-extension/
+  title: Joomla-Extension / Integrate / Blog
+- path: /blog/2010/06/piwik-0-6-3/
+  title: Piwik-0-6-3 / Blog
+- path: /blog/author/admin-2/page/2/
+  title: Admin-2 / Author / Blog
+- path: /participate/documentation/
+  title: Documentation / Participate
+- path: /features/IRANHACKTEAM
+  title: Iranhackteam / Features
+- path: /downloads
+  title: Downloads
+- path: /blog/cetgory/videos
+  title: Videos / Cetgory / Blog
+- path: /%3Cbr%20/%3E
+  title: '> / <Br '
+- path: /download-started/Piwik%20is%201.12
+  title: Piwik Is 1.12 / Download-Started
+- path: /intgrated
+  title: Intgrated
+- path: /?nr=0
+  title: ROOT
+- path: /docs/tracking-api/fail
+  title: Fail / Tracking-Api / Docs
+- path: /blog/integrate/oscommerce-e-commerce-analytics/
+  title: Oscommerce-E-Commerce-Analytics / Integrate / Blog
+- path: /blog/2012/02/new-features-in-piwik-1-7-screenshots/href=
+  title: Href= / New-Features-In-Piwik-1-7-Screenshots / Blog
+- path: /forums
+  title: Forums
+- path: /blog/about-features/custom-variables-tip/
+  title: Custom-Variables-Tip / About-Features / Blog
+- path: /blog/2011/10/piwik-mobile-1-6-1/
+  title: Piwik-Mobile-1-6-1 / Blog
+- path: /blog/integrate/gwt-wrapper-for-piwik/
+  title: Gwt-Wrapper-For-Piwik / Integrate / Blog
+- path: /docs/instalation
+  title: Instalation / Docs
+- path: /hosting/partners/
+  title: Partners / Hosting
+- path: /blog/tasks/replace-flash-graphs-with-javascript-canvas-graphs-charts-now-available-in-piwik-1-5/
+  title: Replace-Flash-Graphs-With-Javascript-Canvas-Graphs-Charts-Now-Available-In-Piwik-1-5 / Tasks / Blog
+- path: /read.php?2,44701
+  title: Read.Php
+- path: /blog/roadmap_categories/admin-settings/
+  title: Admin-Settings / Roadmap_Categories / Blog
+- path: /moderation.php
+  title: Moderation.Php
+- path: /blog/2012/08/piwik-linkedin-group-join-the-discussion/
+  title: Piwik-Linkedin-Group-Join-The-Discussion / Blog
+- path: /free-software/bsd/%20Simplified%20BSD%20(also%20in%20js/LICENSE.txt)/
+  title: License.Txt) /  Simplified Bsd (Also In Js / Bsd / Free-Software
+- path: /blog/integrate/piwik-mod-for-mybb/
+  title: Piwik-Mod-For-Mybb / Integrate / Blog
+- path: /blog/2012/03/piwik-mobile-1-7-1/
+  title: Piwik-Mobile-1-7-1 / Blog
+- path: /features/demo
+  title: Demo / Features
+- path: /blog/integrate_categories/content-management-systems/
+  title: Content-Management-Systems / Integrate_Categories / Blog
+- path: /blog/2010/06/piwik-press-release/
+  title: Piwik-Press-Release / Blog
+- path: /mta
+  title: Mta
+- path: /blog/2011/06/piwik-community-survey-here-are-the-results/
+  title: Piwik-Community-Survey-Here-Are-The-Results / Blog
+- path: /blog/2011/06/piwik-mobile-1-5/piwikmobile150android2live/
+  title: Piwikmobile150Android2Live / Piwik-Mobile-1-5 / Blog
+- path: /?event=reg
+  title: ROOT
+- path: /blog/2012/11/piwik-1-9-2/?icl_string_track_value=Post+Comment&icl_string_track_context=theme
+  title: Piwik-1-9-2 / Blog
+- path: /blog/2008/04/piwik-jobs/
+  title: Piwik-Jobs / Blog
+- path: /blog/2009/02/piwik-0229/
+  title: Piwik-0229 / Blog
+- path: /blog/roadmap_categories/user-interface-improvements/
+  title: User-Interface-Improvements / Roadmap_Categories / Blog
+- path: /blog/feature_categories/live-map-preview/
+  title: Live-Map-Preview / Feature_Categories / Blog
+- path: /blog/2012/05/piwik-response-to-zf2011-02-security-advisory/
+  title: Piwik-Response-To-Zf2011-02-Security-Advisory / Blog
+- path: /%20mysql%20versions
+  title: ' Mysql Versions'
+- path: /blog/2010/05/release-of-piwik-0-6-2/
+  title: Release-Of-Piwik-0-6-2 / Blog
+- path: /blog/users/matthieu-aubry/
+  title: Matthieu-Aubry / Users / Blog
+- path: /blog/tasks/new-report-days-to-conversionpurchase-now-available-in-piwik-1-7/
+  title: New-Report-Days-To-Conversionpurchase-Now-Available-In-Piwik-1-7 / Tasks / Blog
+- path: /faq/?search=
+  title: Faq
+- path: /blog/2012/06/community-marketing-leader-wanted/
+  title: Community-Marketing-Leader-Wanted / Blog
+- path: /hosting
+  title: Hosting
+- path: /docs/themes/
+  title: Themes / Docs
+- path: /docs/theme
+  title: Theme / Docs
+- path: /DoC7Installaion
+  title: Doc7Installaion
+- path: /Doc/Installaion
+  title: Installaion / Doc
+- path: /Doc/installaion
+  title: Installaion / Doc
+- path: /blog/2009/04/piwik-0233-released-are-there-any-bug-left-in-piwik/
+  title: Piwik-0233-Released-Are-There-Any-Bug-Left-In-Piwik / Blog
+- path: /blog/2012/08/survey-your-opinion-matters/
+  title: Survey-Your-Opinion-Matters / Blog
+- path: /blog/2008/05/piwik-is-looking-for-a-translator-coordinator-be-part-of-the-piwik-team/
+  title: Piwik-Is-Looking-For-A-Translator-Coordinator-Be-Part-Of-The-Piwik-Team / Blog
+- path: /blog/2008/02/welcome-japan/
+  title: Welcome-Japan / Blog
+- path: /download-piwik/*
+  title: '* / Download-Piwik'
+- path: /blog/author/matt/
+  title: Matt / Author / Blog
+- path: /blog/tasks/make-row-evolution-feature-even-more-awesome/
+  title: Make-Row-Evolution-Feature-Even-More-Awesome / Tasks / Blog
+- path: /blog/integrate/piwik-integration-for-cms-made-simple/
+  title: Piwik-Integration-For-Cms-Made-Simple / Integrate / Blog
+- path: /blog/2010/05/piwik-0-6-2/
+  title: Piwik-0-6-2 / Blog
+- path: /submit-/
+  title: Submit-
+- path: /blog/users/piwik-team/
+  title: Piwik-Team / Users / Blog
+- path: /blog/users/noah-firth/
+  title: Noah-Firth / Users / Blog
+- path: /blog/users/benaka-m/
+  title: Benaka-M / Users / Blog
+- path: /blog/users/adrian-speyer/
+  title: Adrian-Speyer / Users / Blog
+- path: /docs/installation-/
+  title: Installation- / Docs
+- path: /blog/2010/03/piwik-irc-meetup-3/
+  title: Piwik-Irc-Meetup-3 / Blog
+- path: /%20contao
+  title: ' Contao'
+- path: /security/%E2%80%8E
+  title: "\u200E / Security"
+- path: /googlef808bef11519e880.html
+  title: Googlef808Bef11519E880.Html
+- path: /blog/integrate/silex-plugin/
+  title: Silex-Plugin / Integrate / Blog
+- path: /blog/category/about/page/2/
+  title: About / Category / Blog
+- path: /demo/libs/javascript/sprintf.js?piwik=3D0.4.3&quot;=20
+  title: Sprintf.Js / Javascript / Libs / Demo
+- path: /blog/category/community/page/3/
+  title: Community / Category / Blog
+- path: /demo/%22
+  title: '" / Demo'
+- path: /participate/quality-assurance/
+  title: Quality-Assurance / Participate
+- path: /participate/translations-2/
+  title: Translations-2 / Participate
+- path: /blog/tasks/ecommerce-analytics-analytics-ecommerce-now-available-in-piwik-1-5/
+  title: Ecommerce-Analytics-Analytics-Ecommerce-Now-Available-In-Piwik-1-5 / Tasks / Blog
+- path: /blog/2012/03/piwik-mobile-1-7/iphone_5_summary/
+  title: Iphone_5_Summary / Piwik-Mobile-1-7 / Blog
+- path: /blog/tasks/lock-down-accounts-by-ip-after-n-failed-attemps-at-logging/
+  title: Lock-Down-Accounts-By-Ip-After-N-Failed-Attemps-At-Logging / Tasks / Blog
+- path: /blog/2011/04/new-piwik-mobile-app-released-also-piwik-1-3rc1-available-for-early-adopters/
+  title: New-Piwik-Mobile-App-Released-Also-Piwik-1-3Rc1-Available-For-Early-Adopters / Blog
+- path: /blog/2008/11/sourceforge-offers-piwik-to-150000-open-source-projects/
+  title: Sourceforge-Offers-Piwik-To-150000-Open-Source-Projects / Blog
+- path: /blog/2009/06/piwik-041/
+  title: Piwik-041 / Blog
+- path: /blog/integrate/vanilla-forum-piwik-analytics-plugin/
+  title: Vanilla-Forum-Piwik-Analytics-Plugin / Integrate / Blog
+- path: /blog/2013/01/crowdfunding-success-for-svg-maps-up-next-custom-filter-editor/
+  title: Crowdfunding-Success-For-Svg-Maps-Up-Next-Custom-Filter-Editor / Blog
+- path: /blog/author/adrian/
+  title: Adrian / Author / Blog
+- path: /blog/2013/09/piwik-mobile-1-9-7-brings-better-support-for-ios7/
+  title: Piwik-Mobile-1-9-7-Brings-Better-Support-For-Ios7 / Blog
+- path: /one_oneisgreat
+  title: One_Oneisgreat
+- path: /faq/how-to/fdjkghdkj
+  title: Fdjkghdkj / How-To / Faq
+- path: /blog/author/admin-2/page/4/
+  title: Admin-2 / Author / Blog
+- path: /LOGIN
+  title: Login
+- path: /changelog/%23
+  title: '# / Changelog'
+- path: /blog/2012/05/piwik-mobile-1-8/
+  title: Piwik-Mobile-1-8 / Blog
+- path: /nik
+  title: Nik
+- path: /portal
+  title: Portal
+- path: /docs/tracking.api/
+  title: Tracking.Api / Docs
+- path: '/docs/javascript-tracking/:'
+  title: ': / Javascript-Tracking / Docs'
+- path: /blog/2012/06/piwik-ecommerce-extension-for-magento/%3Cspan%20class=
+  title: <Span Class= / Piwik-Ecommerce-Extension-For-Magento / Blog
+- path: /blog/integrate/ez-publish-module/
+  title: Ez-Publish-Module / Integrate / Blog
+- path: /docs/javascript-tracking/
+  title: Javascript-Tracking / Docs
+- path: /blog/users/fabian-becker/
+  title: Fabian-Becker / Users / Blog
+- path: /changelog/?cat_ID=%22&#039;%3CClV88%3E
+  title: Changelog
+- path: /docs/javascript-trackng/
+  title: Javascript-Trackng / Docs
+- path: /blog/category/documentation/
+  title: Documentation / Category / Blog
+- path: /register
+  title: Register
+- path: /signin
+  title: Signin
+- path: /blog/integrate/python-client-for-tracking-api-and-analytics-api/
+  title: Python-Client-For-Tracking-Api-And-Analytics-Api / Integrate / Blog
+- path: /blog/2009/03/piwik-0232/
+  title: Piwik-0232 / Blog
+- path: /fixfocus
+  title: Fixfocus
+- path: /docs/custom-variables/:/
+  title: ': / Custom-Variables / Docs'
+- path: /log-analytics/?r44b=no
+  title: Log-Analytics
+- path: /faq/general/:/
+  title: ': / General / Faq'
+- path: /%5DPiwik%5B/url%5D
+  title: Url] / ]Piwik[
+- path: /blog/2010/05/release-of-piwik-0-6-2/entry-pages/?pk_campaign=Blog&pk_kwd=More
+  title: Entry-Pages / Release-Of-Piwik-0-6-2 / Blog
+- path: /docs/ecommerce-analytics/%23toc-tracking-ecommerce-orders-items-purchased-required
+  title: '#Toc-Tracking-Ecommerce-Orders-Items-Purchased-Required / Ecommerce-Analytics / Docs'
+- path: /user-guide/video-actions-reports-page-views-downloads-clicks/%3Cspan%20class=
+  title: <Span Class= / Video-Actions-Reports-Page-Views-Downloads-Clicks / User-Guide
+- path: /license
+  title: License
+- path: /log-analytics/how-to/%20filter%20bots
+  title: ' Filter Bots / How-To / Log-Analytics'
+- path: /docs/campaigns
+  title: Campaigns / Docs
+- path: /blog/2010/05/piwik-0-6/
+  title: Piwik-0-6 / Blog
+- path: /blog/2008/01/how-to-design-an-api-best-practises-concepts-technical-aspects/%20and%20updates
+  title: ' And Updates / How-To-Design-An-Api-Best-Practises-Concepts-Technical-Aspects / Blog'
+- path: /contact-professional-support/
+  title: Contact-Professional-Support
+- path: /blog/2011/10/piwik-response-to-cve-2011-3791/?pk_campaign=Blog&pk_kwd=More
+  title: Piwik-Response-To-Cve-2011-3791 / Blog
+- path: /docs/tracking-api/
+  title: Tracking-Api / Docs
+- path: /docs/ecommerce-analytics/%3Cscript%3Ealert5840%3C/script%3E.html
+  title: Script>.Html / <Script>Alert5840< / Ecommerce-Analytics / Docs
+- path: /blog/tasks/
+  title: Tasks / Blog
+- path: /blog/2013/09/piwik-mobile-1-9-8-with-full-support-for-ios-7/?pk_campaign=Blog&pk_kwd=More
+  title: Piwik-Mobile-1-9-8-With-Full-Support-For-Ios-7 / Blog
+- path: /FAQ/
+  title: Faq
+- path: /blog/tasks/graphs-list-of-improvements-jqplotjs/?pk_campaign=Email-Nov2011&pk_kwd=OrderNow
+  title: Graphs-List-Of-Improvements-Jqplotjs / Tasks / Blog

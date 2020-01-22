@@ -1,6 +1,8 @@
 
 from pathlib import Path
 
+import pytest
+
 from tracking_load_faker import providers
 
 # Assuming the structure:
@@ -20,7 +22,7 @@ def test_providers():
     assert len(all_providers)
 
     basenames = (
-        'page_url',
+        'page_action',
         'product_name',
         'resolution',
         'gender',
@@ -31,7 +33,7 @@ def test_providers():
         'referrer',
         'region',
         'biased_bool',
-        'tracking_request',
+        'tracking_events',
     )
 
     for basename in basenames:
@@ -40,6 +42,48 @@ def test_providers():
 
         fake.seed_instance(42)
         generated2 = getattr(fake, basename)()
+
+        assert generated1 is not None
+        assert generated2 is not None
+        assert generated1 == generated2
+
+
+def test_provider_page_action():
+    fake = providers.TrackingFaker()
+
+    with pytest.raises(ValueError):
+        fake.page_action(action_type='INVALID ACTION')
+
+    for action_type in ('file', 'link', 'page'):
+        fake.seed_instance(42)
+        generated1 = fake.page_action(action_type=action_type)
+
+        fake.seed_instance(42)
+        generated2 = fake.page_action(action_type=action_type)
+
+        assert generated1 is not None
+        assert generated2 is not None
+        assert generated1 == generated2
+
+
+def test_provider_page_view():
+    fake = providers.TrackingFaker()
+
+    with pytest.raises(ValueError):
+        fake.page_action(action_type='INVALID ACTION')
+
+    for action_type in ('file', 'link', 'page'):
+        fake.seed_instance(42)
+        generated1 = fake.page_view(
+            base_url='http://my/',
+            action_type=action_type,
+        )
+
+        fake.seed_instance(42)
+        generated2 = fake.page_view(
+            base_url='http://my/',
+            action_type=action_type,
+        )
 
         assert generated1 is not None
         assert generated2 is not None

@@ -6,6 +6,7 @@ Faker providers for tracking request generation
 '''
 
 from collections import OrderedDict
+import string
 from typing import Any, Iterable, List, Mapping, Tuple
 from urllib.parse import urljoin, quote as urlquote
 
@@ -51,17 +52,58 @@ def get_all_providers() -> Iterable[TrackingBaseProvider]:
 
 
 class Provider(TrackingBaseProvider):
-    @faker_data('page_url')
-    def page_url(self, data: List[str] = None) -> str:
+    @faker_data('external_url', arg_name='link_data')
+    @faker_data('internal_page', arg_name='page_data')
+    @faker_data('internal_file', arg_name='file_data')
+    def page_action(
+        self,
+        base_url: str = '',
+        action_type: str = '',
+        link_data: List[str] = None,
+        page_data: Mapping[str, str] = None,
+        file_data: List[str] = None,
+    ) -> Mapping[str, str]:
         '''
-        Generates page URLs.
+        Generates page actions.
 
-        >>> fake.page_url()
-        'http://forums.piwik.org'
-        >>> fake.page_url()
-        '/docs/update'
+        Arguments:
+            base_url: URL to be used as a prefix for the internal paths
+            action_type: type of action to be generated, from 'link', 'page' or
+            'url'. By defaults picks one randomly
+
+        >>> fake.page_action()
+        {'type': 'link', 'url': 'http://forums.piwik.org'}
+        >>> fake.page_action()
+        {'title': 'Blog', 'type': 'page', 'url': '/blog'}
         '''
-        return self.random_element(data)
+        action_type = action_type or self.random_element(OrderedDict([
+            ('link', len(link_data)),
+            ('page', len(page_data)),
+            ('file', len(file_data)),
+        ]))
+        if action_type == 'page':
+            page = self.random_element(page_data)
+            return {
+                'title': page['title'],
+                'type': 'page',
+                'url': urljoin(base_url, page['path']),
+            }
+        elif action_type == 'file':
+            file_link = self.random_element(file_data)
+            return {
+                'title': '',
+                'type': 'download',
+                'url': urljoin(base_url, file_link),
+            }
+        elif action_type == 'link':
+            url = self.random_element(link_data)
+            return {
+                'title': '',
+                'type': 'link',
+                'url': url,
+            }
+        else:
+            raise ValueError('Unrecognized action type: %r' % action_type)
 
     @faker_data('product_name')
     def product_name(self, data: List[str] = None) -> str:
@@ -159,7 +201,11 @@ class Provider(TrackingBaseProvider):
         return base + urlquote(keyword)
 
     @faker_data('referrer')
-    def referrer(self, data: List[str] = None) -> str:
+    def referrer(
+        self,
+        base_url='',
+        data: List[str] = None,
+    ) -> str:
         '''
         Generates referrer URLs.
 
@@ -174,13 +220,14 @@ class Provider(TrackingBaseProvider):
         url_no_keyword = self.generator.search_engine_url_without_keyword()
 
         # Using the same relative frequencies as in plugin-visitorGenerator
-        return self.random_element(
+        url = self.random_element(
             [''] * 3 +
             [url_referrer] * 9 +
             [url_no_keyword] * 4 +
             [url_keyword] * 9 +
             data
         )
+        return urljoin(base_url, url)
 
     @faker_data('region')
     def region(self, data: List[str] = None) -> str:
@@ -208,18 +255,104 @@ class Provider(TrackingBaseProvider):
             (False, 1.0 - bias),
         ]))
 
-    def tracking_request(
+    def tracking_events(self):  # pragma: no cover
+        '''
+        Generates a list of tracking events for one page view.
+
+        >>> fake.tracking_events()
+        [
+            {'c': 'Movie', 'a': 'play', 'n': 'A Good Movie'},
+            {'c': 'Movie', 'a': 'stop', 'n': 'A Good Movie'},
+            {'c': 'Movie', 'a': 'play', 'n': 'A Bad Movie'},
+        ]
+        >>> fake.tracking_events()
+        []
+        '''
+        events = []
+
+        if self.generator.biased_bool(0.10):
+            events += [{'c': 'Movie', 'a': 'play', 'n': 'A Good Movie'}]
+            if self.generator.biased_bool(0.50):
+                events += [{'c': 'Movie', 'a': 'pause', 'n': 'A Good Movie'}]
+
+        if self.generator.biased_bool(0.10):
+            events += [{'c': 'Movie', 'a': 'play', 'n': 'A Bad Movie'}]
+            if self.generator.biased_bool(0.50):
+                events += [{'c': 'Movie', 'a': 'stop', 'n': 'A Bad Movie'}]
+
+        return events
+
+    def page_view(
         self,
+        user_id: str = '',
+        action_type: str = '',
         base_url: str = 'http://example.com/',
         id_site: int = 1,
     ) -> Mapping[str, Any]:
         '''
-        Generates data for a Matomo tracking request (!).
+        Generates data for a Matomo page view (!).
         '''
-        return {
-            'action_name': self.generator.sentence(),
-            'idsite': str(id_site),
-            'rec': '1',
-            'apiv': '1',
-            'url': urljoin(base_url, self.generator.page_url()),
+        base_params = {
+            'urlref': self.generator.referrer(base_url),
+            'ua': self.generator.user_agent(),
+            'lang': self.generator.accept_language(),
+            'res': 'x'.join(self.generator.resolution()),
+            'uid': user_id,
         }
+
+        action = self.generator.page_action(
+            base_url=base_url,
+            action_type=action_type,
+        )
+
+        request_action = generate_tracking_request(
+            action,
+            action['type'] == 'page' and self.generator.biased_bool(0.10),
+            params=base_params,
+        )
+        requests = [request_action]
+
+        if action['type'] == 'page':
+            base_params.update({
+                'pv_id': self.generator.pystr_format(
+                    string_format='{{random_letter}}' * 6,
+                    letters=string.ascii_letters + string.digits,
+                ),
+            })
+            requests += [
+                generate_tracking_request(
+                    action,
+                    new_visit=False,
+                    event=e,
+                    params=base_params,
+                )
+                for e in self.generator.tracking_events()
+            ]
+
+        return requests
+
+
+def generate_tracking_request(
+    action,
+    new_visit=False,
+    event=None,
+    params=None,
+):
+    action_data = {}
+    if action['type'] in ('link', 'download'):
+        action_data.update({action['type']: action['url']})
+
+    if new_visit:
+        action_data['new_visit'] = '1'
+
+    if event:
+        action_data['e_c'] = event['c']
+        action_data['e_n'] = event['n']
+        action_data['e_a'] = event['a']
+
+    return {
+        'action_name': action['title'],
+        'url': action['url'],
+        **action_data,
+        **(params or {}),
+    }

@@ -1,2 +1,5 @@
 [run]
 source = tracking_load_faker/
+
+[report]
+show_missing = true
