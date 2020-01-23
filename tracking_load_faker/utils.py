@@ -39,12 +39,13 @@ def faker_data(basename, search_path: str = None, arg_name: str = 'data'):
             in {FAKER_DATA_DIR}
         arg_name: name of the argument to be injected. Defaults to 'data'
     '''
+    data = get_faker_data(basename, search_path)
 
     def decorator(f):
         @wraps(f)
         def inner(*args, **kwargs):
             kwargs = kwargs or {}
-            kwargs[arg_name] = get_faker_data(basename, search_path)
+            kwargs[arg_name] = data
             return f(*args, **kwargs)
         return inner
     return decorator

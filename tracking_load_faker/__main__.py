@@ -14,6 +14,7 @@ def main():
     parser = argparse.ArgumentParser(
         description='Run Locust against the default locustfile',
         epilog='All arguments after -- are passed to locust',
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
     parser.add_argument(
         '-f', '--locustfile', default=LOCUST_FILE,
