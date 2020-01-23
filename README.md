@@ -22,19 +22,20 @@ Invoke locust with:
 $ locust-tracking-load-faker
 ```
 
-### Environment Variables
+### Configuration
 
-The following environment variables are available for configuration:
+The following settings are available:
 
-| Name                     | Description                                     | Default                |
-| ------------------------ | ----------------------------------------------- | ---------------------- |
-| `FAKER_DATA_DIR`         | Directory to lookup faker data files            | `None`                 |
-| `LOCUST_MAX_WAIT`        | Maximum wait time (ms)                          | `90`                   |
-| `LOCUST_MIN_WAIT`        | Minimum wait time (ms)                          | `30`                   |
-| `MATOMO_REMOTE_HOST`     | Remote host for the Matomo tracking             | http://localhost:8080/ |
-| `MATOMO_SITE_BASE_URL`   | Base URL of the site to be simulated            | http://example.com/    |
-| `MATOMO_SITE_ID`         | ID of the simulated site in the Matomo instance | `1`                    |
-| `MATOMO_TRACKER_SUBPATH` | Subpath for the tracker JS file                 | `matomo.js`            |
+| Environment variable     | Argument           | Description                                     | Default                          |
+| ------------------------ | ------------------ | ----------------------------------------------- | -------------------------------- |
+| -                        | `--endpoint`       | Endpoint to send the requests to                | http://localhost:8080/matomo.php |
+| `FAKER_DATA_DIR`         | `--faker-data-dir` | Directory to lookup faker data files            | `None`                           |
+| `LOCUST_MAX_WAIT`        | `--max-wait-time`  | Maximum wait time (ms)                          | `90`                             |
+| `LOCUST_MIN_WAIT`        | `--min-wait-time`  | Minimum wait time (ms)                          | `30`                             |
+| `MATOMO_REMOTE_HOST`     | -                  | Remote host for the Matomo tracking             | http://localhost:8080/           |
+| `MATOMO_SITE_BASE_URL`   |                    | Base URL of the site to be simulated            | http://example.com/              |
+| `MATOMO_SITE_ID`         |                    | ID of the simulated site in the Matomo instance | `1`                              |
+| `MATOMO_TRACKER_SUBPATH` | -                  | Subpath for the tracker JS file                 | `matomo.php`                     |
 
 ## Hooks
 
