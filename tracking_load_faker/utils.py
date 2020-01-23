@@ -9,7 +9,7 @@ from typing import Iterable
 import yaml
 
 HERE = os.path.abspath(os.path.dirname(__file__))
-FAKER_DATA_DIR = os.path.join(HERE, 'faker-data')
+FAKER_DATA_DIR = os.path.join(HERE, 'faker_data')
 
 
 def get_faker_data(basename: str, search_path: str = None):
