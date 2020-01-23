@@ -255,7 +255,16 @@ class Provider(TrackingBaseProvider):
             (False, 1.0 - bias),
         ]))
 
-    def tracking_events(self):  # pragma: no cover
+    def page_view_id(self):
+        '''
+        Generates identifiers for actions in a single page view.
+        '''
+        return self.generator.pystr_format(
+            string_format='{{random_letter}}' * 6,
+            letters=string.ascii_letters + string.digits,
+        )
+
+    def tracking_events(self):
         '''
         Generates a list of tracking events for one page view.
 

@@ -1,5 +1,6 @@
 
 from pathlib import Path
+from unittest.mock import Mock
 
 import pytest
 
@@ -33,7 +34,7 @@ def test_providers():
         'referrer',
         'region',
         'biased_bool',
-        'tracking_events',
+        'page_view_id',
     )
 
     for basename in basenames:
@@ -56,35 +57,40 @@ def test_provider_page_action():
 
     for action_type in ('file', 'link', 'page'):
         fake.seed_instance(42)
-        generated1 = fake.page_action(action_type=action_type)
+        action1 = fake.page_action(action_type=action_type)
 
         fake.seed_instance(42)
-        generated2 = fake.page_action(action_type=action_type)
+        action2 = fake.page_action(action_type=action_type)
 
-        assert generated1 is not None
-        assert generated2 is not None
-        assert generated1 == generated2
+        assert action1 is not None
+        assert action2 is not None
+        assert action1 == action2
+
+
+def test_provider_tracking_events(monkeypatch):
+    mock = Mock(return_value=True)
+    monkeypatch.setattr(providers.Provider, 'biased_bool', mock)
+
+    fake = providers.TrackingFaker()
+    assert fake.tracking_events()
 
 
 def test_provider_page_view():
     fake = providers.TrackingFaker()
 
-    with pytest.raises(ValueError):
-        fake.page_action(action_type='INVALID ACTION')
-
     for action_type in ('file', 'link', 'page'):
         fake.seed_instance(42)
-        generated1 = fake.page_view(
+        view1 = fake.page_view(
             base_url='http://my/',
             action_type=action_type,
         )
 
         fake.seed_instance(42)
-        generated2 = fake.page_view(
+        view2 = fake.page_view(
             base_url='http://my/',
             action_type=action_type,
         )
 
-        assert generated1 is not None
-        assert generated2 is not None
-        assert generated1 == generated2
+        assert view1 is not None
+        assert view2 is not None
+        assert view1 == view2
