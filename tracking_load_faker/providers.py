@@ -7,7 +7,7 @@ Faker providers for tracking request generation
 
 from collections import OrderedDict
 import string
-from typing import Any, Iterable, List, Mapping, Tuple
+from typing import Any, Iterable, List, Mapping, NamedTuple, Tuple
 from urllib.parse import urljoin, quote as urlquote
 
 from faker import Faker
@@ -35,6 +35,12 @@ class TrackingFaker(Faker):
         super().__init__(*args, **kwargs)
         for p in get_all_providers():
             self.add_provider(p)
+
+
+class EventInfo(NamedTuple):
+    category: str
+    action: str
+    name: str
 
 
 def get_all_providers() -> Iterable[TrackingBaseProvider]:
@@ -69,7 +75,7 @@ class Provider(TrackingBaseProvider):
         Arguments:
             base_url: URL to be used as a prefix for the internal paths
             action_type: type of action to be generated, from 'link', 'page' or
-            'url'. By defaults picks one randomly
+            'file'. By defaults picks one randomly
 
         >>> fake.page_action()
         {'type': 'link', 'url': 'http://forums.piwik.org'}
@@ -84,23 +90,26 @@ class Provider(TrackingBaseProvider):
         if action_type == 'page':
             page = self.random_element(page_data)
             return {
-                'title': page['title'],
+                'action_name': page['title'],
                 'type': 'page',
                 'url': urljoin(base_url, page['path']),
             }
         elif action_type == 'file':
             file_link = self.random_element(file_data)
+            url = urljoin(base_url, file_link)
             return {
-                'title': '',
+                'action_name': '',
                 'type': 'download',
-                'url': urljoin(base_url, file_link),
+                'url': url,
+                'download': url,
             }
         elif action_type == 'link':
             url = self.random_element(link_data)
             return {
-                'title': '',
+                'action_name': '',
                 'type': 'link',
                 'url': url,
+                'link': url,
             }
         else:
             raise ValueError('Unrecognized action type: %r' % action_type)
@@ -264,15 +273,15 @@ class Provider(TrackingBaseProvider):
             letters=string.ascii_letters + string.digits,
         )
 
-    def tracking_events(self):
+    def tracking_events(self) -> List[EventInfo]:
         '''
         Generates a list of tracking events for one page view.
 
         >>> fake.tracking_events()
         [
-            {'c': 'Movie', 'a': 'play', 'n': 'A Good Movie'},
-            {'c': 'Movie', 'a': 'stop', 'n': 'A Good Movie'},
-            {'c': 'Movie', 'a': 'play', 'n': 'A Bad Movie'},
+            EventInfo('Movie', 'play', 'A Good Movie'),
+            EventInfo('Movie', 'stop', 'A Good Movie'),
+            EventInfo('Movie', 'play', 'A Bad Movie'),
         ]
         >>> fake.tracking_events()
         []
@@ -280,14 +289,14 @@ class Provider(TrackingBaseProvider):
         events = []
 
         if self.generator.biased_bool(0.10):
-            events += [{'c': 'Movie', 'a': 'play', 'n': 'A Good Movie'}]
+            events += [EventInfo('Movie', 'play', 'A Good Movie')]
             if self.generator.biased_bool(0.50):
-                events += [{'c': 'Movie', 'a': 'pause', 'n': 'A Good Movie'}]
+                events += [EventInfo('Movie', 'pause', 'A Good Movie')]
 
         if self.generator.biased_bool(0.10):
-            events += [{'c': 'Movie', 'a': 'play', 'n': 'A Bad Movie'}]
+            events += [EventInfo('Movie', 'play', 'A Bad Movie')]
             if self.generator.biased_bool(0.50):
-                events += [{'c': 'Movie', 'a': 'stop', 'n': 'A Bad Movie'}]
+                events += [EventInfo('Movie', 'stop', 'A Bad Movie')]
 
         return events
 
@@ -354,16 +363,12 @@ def generate_tracking_request(
     if action['type'] in ('link', 'download'):
         action_data.update({action['type']: action['url']})
 
-    if new_visit:
-        action_data['new_visit'] = '1'
-
     if event:
-        action_data['e_c'] = event['c']
-        action_data['e_n'] = event['n']
-        action_data['e_a'] = event['a']
+        action_data['e_c'] = event.category
+        action_data['e_n'] = event.name
+        action_data['e_a'] = event.action
 
     return {
-        'action_name': action['title'],
         'url': action['url'],
         **action_data,
         **(params or {}),
