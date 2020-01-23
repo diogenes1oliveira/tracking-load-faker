@@ -35,3 +35,12 @@ The following environment variables are available for configuration:
 | `MATOMO_SITE_BASE_URL`   | Base URL of the site to be simulated            | http://example.com/    |
 | `MATOMO_SITE_ID`         | ID of the simulated site in the Matomo instance | `1`                    |
 | `MATOMO_TRACKER_SUBPATH` | Subpath for the tracker JS file                 | `matomo.js`            |
+
+## Hooks
+
+Link the provided hooks directory to the Git directory:
+
+```shell
+rm -rf .git/hooks/
+ln -s .git/hooks/ .hooks/
+```
