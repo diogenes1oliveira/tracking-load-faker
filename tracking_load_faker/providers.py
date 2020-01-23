@@ -7,7 +7,7 @@ Faker providers for tracking request generation
 
 from collections import OrderedDict
 import string
-from typing import Any, Iterable, List, Mapping, NamedTuple, Tuple
+from typing import Iterable, List, Mapping, NamedTuple, Tuple
 from urllib.parse import urljoin, quote as urlquote
 
 from faker import Faker
@@ -316,77 +316,3 @@ class Provider(TrackingBaseProvider):
             'res': 'x'.join(self.generator.resolution()),
             'uid': self.generator.user_name(),
         }
-
-    def page_view(
-        self,
-        user_id: str = '',
-        action_type: str = '',
-        base_url: str = 'http://example.com/',
-        id_site: int = 1,
-    ) -> Mapping[str, Any]:
-        '''
-        Generates data for a Matomo page view (!).
-        '''
-        base_params = {
-            'urlref': self.generator.referrer(base_url),
-            'ua': self.generator.user_agent(),
-            'lang': self.generator.accept_language(),
-            'res': 'x'.join(self.generator.resolution()),
-            'uid': user_id,
-            'idsite': str(id_site),
-            'rec': '1',
-            'apiv': '1',
-        }
-
-        action = self.generator.page_action(
-            base_url=base_url,
-            action_type=action_type,
-        )
-
-        request_action = generate_tracking_request(
-            action,
-            action['type'] == 'page' and self.generator.biased_bool(0.10),
-            params=base_params,
-        )
-        requests = [request_action]
-
-        if action['type'] == 'page':
-            base_params.update({
-                'pv_id': self.generator.pystr_format(
-                    string_format='{{random_letter}}' * 6,
-                    letters=string.ascii_letters + string.digits,
-                ),
-            })
-            requests += [
-                generate_tracking_request(
-                    action,
-                    new_visit=False,
-                    event=e,
-                    params=base_params,
-                )
-                for e in self.generator.tracking_events()
-            ]
-
-        return requests
-
-
-def generate_tracking_request(
-    action,
-    new_visit=False,
-    event=None,
-    params=None,
-):
-    action_data = {}
-    if action['type'] in ('link', 'download'):
-        action_data.update({action['type']: action['url']})
-
-    if event:
-        action_data['e_c'] = event.category
-        action_data['e_n'] = event.name
-        action_data['e_a'] = event.action
-
-    return {
-        'url': action['url'],
-        **action_data,
-        **(params or {}),
-    }

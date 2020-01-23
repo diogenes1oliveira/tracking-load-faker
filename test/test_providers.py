@@ -73,24 +73,3 @@ def test_provider_tracking_events(monkeypatch):
 
     fake = providers.TrackingFaker()
     assert fake.tracking_events()
-
-
-def test_provider_page_view():
-    fake = providers.TrackingFaker()
-
-    for action_type in ('file', 'link', 'page'):
-        fake.seed_instance(42)
-        view1 = fake.page_view(
-            base_url='http://my/',
-            action_type=action_type,
-        )
-
-        fake.seed_instance(42)
-        view2 = fake.page_view(
-            base_url='http://my/',
-            action_type=action_type,
-        )
-
-        assert view1 is not None
-        assert view2 is not None
-        assert view1 == view2

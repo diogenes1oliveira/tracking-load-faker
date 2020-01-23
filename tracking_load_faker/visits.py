@@ -31,11 +31,10 @@ def visit_action_sequence(
     i = 0
 
     while True:
-        action.update(
-            urlref=prev_url,
-            pv_id=fake.page_view_id(),
-        )
-        yield action
+        action['urlref'] = prev_url
+        if action['type'] == 'page':
+            action['pv_id'] = fake.page_view_id()
+        yield action.copy()
 
         if action['type'] != 'page' or i > 10:
             break
@@ -51,5 +50,5 @@ def visit_action_sequence(
             yield event_action
 
         prev_url = action['url']
-        action = fake.page_action()
+        action = fake.page_action(base_url)
         i += 1

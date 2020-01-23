@@ -27,7 +27,9 @@ class TrackingRequestBehavior(TaskSet):
                 idsite=str(self.locust.id_site),
                 apiv='1',
                 rec='1',
+                cookie='1',
             )
+            action_params.pop('type', None)
             r = self.client.get(
                 self.locust.tracker_subpath,
                 params=action_params,
