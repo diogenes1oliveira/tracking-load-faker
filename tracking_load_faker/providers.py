@@ -6,9 +6,11 @@ Faker providers for tracking request generation
 '''
 
 from collections import OrderedDict
+from hashlib import md5
 import string
 from typing import Iterable, List, Mapping, NamedTuple, Tuple
 from urllib.parse import urljoin, quote as urlquote
+from uuid import uuid4
 
 from faker import Faker
 from faker.providers import BaseProvider
@@ -310,9 +312,13 @@ class Provider(TrackingBaseProvider):
         >>> fake.visitor_params()
         {'lang': 'en', 'res': '1640x2480', ...}
         '''
+        uid = self.generator.user_name()
+
         return {
             'ua': self.generator.user_agent(),
             'lang': self.generator.accept_language(),
             'res': 'x'.join(self.generator.resolution()),
-            'uid': self.generator.user_name(),
+            'uid': uid,
+            '_id': md5(uid.encode('utf-8')).hexdigest()[:16],
+            'rand': md5(uuid4().bytes).hexdigest(),
         }
