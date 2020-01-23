@@ -19,7 +19,7 @@ sending them to the tracker URL to simulate real users.
 Invoke locust with:
 
 ```shell
-locust -f matomo_locust_test/locustfile.py
+$ locust-tracking-load-faker
 ```
 
 ### Environment Variables
@@ -43,4 +43,10 @@ Link the provided hooks directory to the Git directory:
 ```shell
 rm -rf .git/hooks/
 ln -s "$PWD"/.hooks .git/hooks
+```
+
+To regenerate `requirements.txt`:
+
+```shell
+$ poetry export -f requirements.txt --without-hashes --dev -o requirements.txt
 ```
