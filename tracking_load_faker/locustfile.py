@@ -5,6 +5,7 @@ from locust import between, HttpLocust, TaskSet, task
 from requests.packages import urllib3
 
 from tracking_load_faker.providers import TrackingFaker
+from tracking_load_faker.visits import visit_action_sequence
 
 
 urllib3.disable_warnings(category=urllib3.exceptions.InsecureRequestWarning)
@@ -12,21 +13,24 @@ urllib3.disable_warnings(category=urllib3.exceptions.InsecureRequestWarning)
 
 class TrackingRequestBehavior(TaskSet):
     def on_start(self):
-        self.faker = TrackingFaker()
-        self.user_id = self.faker.user_name()
+        self.fake = TrackingFaker()
+        self.user_params = self.fake.visitor_params()
 
     @task
     def track_request(self):
-        requests_params = self.faker.page_view(
-            id_site=self.locust.id_site,
+        for action_params in visit_action_sequence(
             base_url=self.locust.base_url,
-            user_id=self.user_id,
-        )
-
-        for params in requests_params:
+            fake=self.fake,
+        ):
+            action_params.update(
+                self.user_params,
+                idsite=str(self.locust.id_site),
+                apiv='1',
+                rec='1',
+            )
             r = self.client.get(
                 self.locust.tracker_subpath,
-                params=params,
+                params=action_params,
                 verify=False,
             )
             time.sleep(0.1)

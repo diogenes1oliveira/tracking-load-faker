@@ -300,6 +300,23 @@ class Provider(TrackingBaseProvider):
 
         return events
 
+    def visitor_params(self):
+        '''
+        Generates visitor-specific params such as user ID, resolution, browser,
+        language, etc.
+
+        >>> fake.visitor_params()
+        {'lang': 'pt', 'res': '640x480', ...}
+        >>> fake.visitor_params()
+        {'lang': 'en', 'res': '1640x2480', ...}
+        '''
+        return {
+            'ua': self.generator.user_agent(),
+            'lang': self.generator.accept_language(),
+            'res': 'x'.join(self.generator.resolution()),
+            'uid': self.generator.user_name(),
+        }
+
     def page_view(
         self,
         user_id: str = '',
