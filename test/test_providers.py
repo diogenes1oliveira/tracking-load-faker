@@ -1,8 +1,8 @@
 
 from pathlib import Path
-import re
+from unittest.mock import Mock
 
-import inflection
+import pytest
 
 from tracking_load_faker import providers
 
@@ -22,15 +22,54 @@ def test_providers():
     all_providers = list(providers.get_all_providers())
     assert len(all_providers)
 
-    for provider in all_providers:
-        basename = inflection.underscore(
-            re.sub('Provider$', '', provider.__name__),
-        )
+    basenames = (
+        'page_action',
+        'product_name',
+        'resolution',
+        'gender',
+        'accept_language',
+        'search_engine',
+        'search_engine_url_without_keyword',
+        'search_engine_url_with_keyword',
+        'referrer',
+        'region',
+        'biased_bool',
+        'page_view_id',
+    )
 
+    for basename in basenames:
         fake.seed_instance(42)
         generated1 = getattr(fake, basename)()
 
         fake.seed_instance(42)
         generated2 = getattr(fake, basename)()
 
+        assert generated1 is not None
+        assert generated2 is not None
         assert generated1 == generated2
+
+
+def test_provider_page_action():
+    fake = providers.TrackingFaker()
+
+    with pytest.raises(ValueError):
+        fake.page_action(action_type='INVALID ACTION')
+
+    for action_type in ('file', 'link', 'page'):
+        fake.seed_instance(42)
+        action1 = fake.page_action(action_type=action_type)
+
+        fake.seed_instance(42)
+        action2 = fake.page_action(action_type=action_type)
+
+        assert action1 is not None
+        assert action2 is not None
+        assert action1 == action2
+
+
+def test_provider_tracking_events(monkeypatch):
+    mock = Mock(return_value=True)
+    monkeypatch.setattr(providers.Provider, 'biased_bool', mock)
+
+    fake = providers.TrackingFaker()
+    assert fake.tracking_events()

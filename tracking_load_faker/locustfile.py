@@ -1,31 +1,42 @@
 import os
-from urllib3.exceptions import InsecureRequestWarning
+import time
 
 from locust import between, HttpLocust, TaskSet, task
-import requests
+from requests.packages import urllib3
 
 from tracking_load_faker.providers import TrackingFaker
+from tracking_load_faker.visits import visit_action_sequence
 
 
-requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
+urllib3.disable_warnings(category=urllib3.exceptions.InsecureRequestWarning)
 
 
 class TrackingRequestBehavior(TaskSet):
     def on_start(self):
-        self.faker = TrackingFaker()
+        self.fake = TrackingFaker()
+        self.user_params = self.fake.visitor_params()
 
     @task
     def track_request(self):
-        params = self.faker.tracking_request(
-            id_site=self.locust.id_site,
+        for action_params in visit_action_sequence(
             base_url=self.locust.base_url,
-        )
-        r = self.client.get(
-            self.locust.tracker_subpath,
-            params=params,
-            verify=False,
-        )
-        r.raise_for_status()
+            fake=self.fake,
+        ):
+            action_params.update(
+                self.user_params,
+                idsite=str(self.locust.id_site),
+                apiv='1',
+                rec='1',
+                cookie='1',
+            )
+            action_params.pop('type', None)
+            r = self.client.get(
+                self.locust.tracker_subpath,
+                params=action_params,
+                verify=False,
+            )
+            time.sleep(0.1)
+            r.raise_for_status()
 
 
 class TrackingRequest(HttpLocust):
@@ -35,8 +46,8 @@ class TrackingRequest(HttpLocust):
     assert host, 'MATOMO_REMOTE_HOST is empty'
 
     wait_time = between(
-        float(os.getenv('LOCUST_MIN_WAIT', '30')) / 100.0,
-        float(os.getenv('LOCUST_MAX_WAIT', '90')) / 100.0,
+        float(os.getenv('LOCUST_MIN_WAIT', '30')) / 1000.0,
+        float(os.getenv('LOCUST_MAX_WAIT', '90')) / 1000.0,
     )
 
     id_site = int(os.getenv('MATOMO_SITE_ID', '1'))
