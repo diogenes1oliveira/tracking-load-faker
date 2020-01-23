@@ -19,6 +19,7 @@ install:
   - poetry install -v
 
 script:
+  - ./.hooks/pre-commit
   - flake8
   - pytest --cov -s
 
