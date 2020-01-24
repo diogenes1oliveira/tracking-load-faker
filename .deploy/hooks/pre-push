@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+exec 1>&2
+
+if ! ./.deploy/lint.sh; then
+  echo
+  echo 'PUSH ABORTED'
+fi

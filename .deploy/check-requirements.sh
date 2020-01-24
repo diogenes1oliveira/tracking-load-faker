@@ -1,6 +1,6 @@
 #!/bin/sh
 
-exec 1>&2
+set -e
 
 echo 'Testing if requirements.txt needs rebuilding...'
 echo

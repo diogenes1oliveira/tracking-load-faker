@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+exec 1>&2
+
+if ! ./.deploy/check-requirements.sh; then
+  echo
+  echo 'COMMIT ABORTED'
+fi

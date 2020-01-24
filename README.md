@@ -42,8 +42,8 @@ The following settings are available:
 Link the provided hooks directory to the Git directory:
 
 ```shell
-rm -rf .git/hooks/
-ln -s "$PWD"/.hooks .git/hooks
+$ rm -rf .git/hooks/
+$ ln -s "$PWD"/.deploy/hooks .git/hooks
 ```
 
 To regenerate `requirements.txt`:

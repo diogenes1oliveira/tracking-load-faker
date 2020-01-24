@@ -1,6 +1,0 @@
-#!/bin/sh
-
-exec 1>&2
-
-echo 'Linting with flake8 before pushing'
-flake8
