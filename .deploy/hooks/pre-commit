@@ -6,4 +6,5 @@ exec 1>&2
 if ! ./.deploy/check-requirements.sh; then
   echo
   echo 'COMMIT ABORTED'
+  exit 1
 fi
