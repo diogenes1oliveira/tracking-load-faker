@@ -2,6 +2,14 @@ language: python
 python: "3.7"
 dist: xenial
 
+addons:
+  apt:
+    sources:
+      - sourceline: ppa:duggan/bats
+    packages:
+      - bats
+      - bc
+
 env:
   - >
     LOCUST_MIN_WAIT=30
@@ -13,15 +21,17 @@ env:
 cache:
   pip: true
 
-install:
+before_install:
   - pip install --upgrade pip
   - pip install poetry codecov
+
+install:
   - poetry install -v
 
-script:
-  - ./.hooks/pre-commit
-  - flake8
-  - pytest --cov -s
+test:
+  - ./.deploy/lint.sh
+  - ./.deploy/check-requirements.sh
+  - ./.deploy/test.sh
 
 after_success:
   - codecov
