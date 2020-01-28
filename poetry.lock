@@ -282,17 +282,6 @@ version = "1.4.3"
 
 [[package]]
 category = "main"
-description = "Use package locustio instead"
-name = "locust"
-optional = false
-python-versions = "*"
-version = "0.0"
-
-[package.dependencies]
-locustio = "*"
-
-[[package]]
-category = "main"
 description = "Website load testing framework"
 name = "locustio"
 optional = false
@@ -584,17 +573,16 @@ marker = "python_version < \"3.8\""
 name = "zipp"
 optional = false
 python-versions = ">=3.6"
-version = "2.0.0"
+version = "2.0.1"
 
 [package.dependencies]
 more-itertools = "*"
 
 [package.extras]
 docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
-testing = ["pathlib2", "contextlib2", "unittest2"]
 
 [metadata]
-content-hash = "5ef633daf7071f119dfdc0ba54cb4986ef2e27e568edf4f3288a20b5bea0bfa9"
+content-hash = "97c947bb1cc80b9b9df4ffdde623371d2ab459bc4ec5732d00cef2beac3c53e6"
 python-versions = "^3.6"
 
 [metadata.files]
@@ -825,10 +813,6 @@ lazy-object-proxy = [
     {file = "lazy_object_proxy-1.4.3-cp38-cp38-win32.whl", hash = "sha256:5541cada25cd173702dbd99f8e22434105456314462326f06dba3e180f203dfd"},
     {file = "lazy_object_proxy-1.4.3-cp38-cp38-win_amd64.whl", hash = "sha256:59f79fef100b09564bc2df42ea2d8d21a64fdcda64979c0fa3db7bdaabaf6239"},
 ]
-locust = [
-    {file = "locust-0.0-py3.6.egg", hash = "sha256:b98b6682914809a9c65007538c95532a78a127c80a63ce4285ce3c4b925edd89"},
-    {file = "locust-0.0.tar.gz", hash = "sha256:aaa38b525795e9c1a35ac3620543cf4e62f82948714f60a32023ea8c9b8edc2e"},
-]
 locustio = [
     {file = "locustio-0.13.5-py2.py3-none-any.whl", hash = "sha256:1b7e669bf7ff5b8123d14af7c7cc9f4aa3890074773a15cb8b5527ca4f5ceae8"},
     {file = "locustio-0.13.5.tar.gz", hash = "sha256:8d62c05ee4a0336db44a3aba94c7f8d6b604a7a3c98cbf6e434b72c87e73a804"},
@@ -1011,6 +995,6 @@ wrapt = [
     {file = "wrapt-1.11.2.tar.gz", hash = "sha256:565a021fd19419476b9362b05eeaa094178de64f8361e44468f9e9d7843901e1"},
 ]
 zipp = [
-    {file = "zipp-2.0.0-py3-none-any.whl", hash = "sha256:57147f6b0403b59f33fd357f169f860e031303415aeb7d04ede4839d23905ab8"},
-    {file = "zipp-2.0.0.tar.gz", hash = "sha256:7ae5ccaca427bafa9760ac3cd8f8c244bfc259794b5b6bb9db4dda2241575d09"},
+    {file = "zipp-2.0.1-py3-none-any.whl", hash = "sha256:e013e7800f60ec4dde789ebf4e9f7a54236e4bbf5df2a1a4e20ce9e1d9609d67"},
+    {file = "zipp-2.0.1.tar.gz", hash = "sha256:b338014b9bc7102ca69e0fb96ed07215a8954d2989bc5d83658494ab2ba634af"},
 ]

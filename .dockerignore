@@ -1,0 +1,17 @@
+*
+
+!/LICENSE
+!/*.md
+!/*.sh
+!/.deploy/
+!/poetry.lock
+!/pyproject.toml
+!/requirements.txt
+
+!/.coveragerc
+!/test/**/*.py
+
+!/tracking_load_faker/**/*.py
+!/tracking_load_faker/**/*.md
+!/tracking_load_faker/faker_data/*.yaml
+!/tracking_load_faker/faker_data/*.md

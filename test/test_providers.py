@@ -9,12 +9,12 @@ from tracking_load_faker import providers
 # Assuming the structure:
 # ROOT
 # - tracking_load_faker
-#   - faker-data
+#   - faker_data
 # - test
 #    - test_providers.py
 
 PACKAGE_ROOT = Path(__file__).absolute().parent.parent
-FAKER_DATA_DIR = PACKAGE_ROOT / 'tracking_load_faker' / 'faker-data'
+FAKER_DATA_DIR = PACKAGE_ROOT / 'tracking_load_faker' / 'faker_data'
 
 
 def test_providers():
