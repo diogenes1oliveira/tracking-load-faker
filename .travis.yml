@@ -28,7 +28,7 @@ before_install:
 install:
   - poetry install -v
 
-test:
+script:
   - ./.deploy/lint.sh
   - ./.deploy/check-requirements.sh
   - ./.deploy/test.sh
