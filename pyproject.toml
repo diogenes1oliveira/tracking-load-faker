@@ -21,10 +21,10 @@ classifiers = [
 "Bug Tracker" = "https://github.com/diogenes1oliveira/tracking-load-faker/issues"
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.7"
 Faker = "^3.0"
 pyyaml = "^5.3"
-locust = "^0.0"
+locust = "^1.0"
 
 [tool.poetry.dev-dependencies]
 ipython = "^7.11"
